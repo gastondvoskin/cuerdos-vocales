@@ -1,6 +1,13 @@
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
+import { corduraParagraphs } from "../assets/texts/sections"
+
+
 const Cordura = () => {
   return (
-    <div>Cordura</div>
+    <div>
+      <h2>CORDURA</h2>
+      <ParagraphsContainer paragraphs={corduraParagraphs}/>
+    </div>
   )
 }
 
