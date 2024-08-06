@@ -1,9 +1,20 @@
+import { Nav, Home, Videos, News, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer } from "./sections/index";
 
 function App() {
 
   return (
     <>
-      <p>Cuerdos Vocales</p>
+      <Nav />
+      <Home />
+      <News />
+      <Videos />
+      <WeAre />
+      <Album />
+      <Cosquin />
+      <Cordura />
+      <CircularConcert />
+      <Contact />
+      <Footer />
     </>
   )
 }
