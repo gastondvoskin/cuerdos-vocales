@@ -1,14 +1,14 @@
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import { corduraParagraphs } from "../assets/texts/sections"
-
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+import SectionHeader from "../components-reusable/SectionHeader";
+import { corduraParagraphs } from "../assets/texts/sections";
 
 const Cordura = () => {
   return (
-    <div>
-      <h2>CORDURA</h2>
-      <ParagraphsContainer paragraphs={corduraParagraphs}/>
-    </div>
-  )
-}
+    <section>
+      <SectionHeader text="CORDURA" />
+      <ParagraphsContainer paragraphs={corduraParagraphs} />
+    </section>
+  );
+};
 
-export default Cordura
+export default Cordura;

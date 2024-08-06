@@ -1,7 +1,11 @@
+import SectionHeader from "../components-reusable/SectionHeader";
+
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <SectionHeader text="FOOTER" />
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

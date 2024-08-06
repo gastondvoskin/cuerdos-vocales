@@ -1,18 +1,17 @@
+import SectionHeader from "../components-reusable/SectionHeader";
+
 const News = () => {
   return (
     <section>
-      <header>
-        <img src="" alt="SHAPE" />
-        <h2>NOVEDADES</h2>
-      </header>
-      <div>
+      <SectionHeader text="NOVEDADES" />
+      {/* <div>
         <img src="" alt="" />
         <label htmlFor=""></label>
         <video src=""></video>
         <label htmlFor=""></label>
-      </div>
+      </div> */}
     </section>
-  )
-}
+  );
+};
 
-export default News
+export default News;
