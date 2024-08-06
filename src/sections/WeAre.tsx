@@ -1,5 +1,5 @@
 import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import weAreParagraphs from "../assets/texts/weAre"
+import { weAreParagraphs } from "../assets/texts/sections"
 
 const WeAre = () => {
   return (
