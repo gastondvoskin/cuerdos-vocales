@@ -1,13 +1,14 @@
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import { weAreParagraphs } from "../assets/texts/sections"
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+import SectionHeader from "../components-reusable/SectionHeader";
+import { weAreParagraphs } from "../assets/texts/sections";
 
 const WeAre = () => {
   return (
-    <div>
-      <h2>SOMOS</h2>
-      <ParagraphsContainer paragraphs={weAreParagraphs}/>
-    </div>
-  )
-}
+    <section>
+      <SectionHeader text="SOMOS" />
+      <ParagraphsContainer paragraphs={weAreParagraphs} />
+    </section>
+  );
+};
 
-export default WeAre
+export default WeAre;

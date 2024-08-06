@@ -1,7 +1,11 @@
+import SectionHeader from "../components-reusable/SectionHeader";
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section>
+      <SectionHeader text="HOME" />
+    </section>
+  );
+};
 
-export default Home
+export default Home;

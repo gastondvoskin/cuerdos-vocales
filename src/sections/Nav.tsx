@@ -1,7 +1,11 @@
+import SectionHeader from "../components-reusable/SectionHeader";
+
 const Nav = () => {
   return (
-    <div>Nav</div>
-  )
-}
+    <nav>
+      <SectionHeader text="NAV" />
+    </nav>
+  );
+};
 
-export default Nav
+export default Nav;
