@@ -5,3 +5,8 @@ export interface IParagraphsContainerProps {
 export interface ISectionHeader {
   text: string;
 }
+
+export interface IImageComponentProps {
+  src: string;
+  alt: string; 
+}
