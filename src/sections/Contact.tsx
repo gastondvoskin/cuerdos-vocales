@@ -1,13 +1,14 @@
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import { contactParagraphs } from "../assets/texts/sections"
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+import SectionHeader from "../components-reusable/SectionHeader";
+import { contactParagraphs } from "../assets/texts/sections";
 
 const Contact = () => {
   return (
-    <div>
-      <h2>REDES Y CONTACTO</h2>
-      <ParagraphsContainer paragraphs={contactParagraphs}/>
-    </div>
-  )
-}
+    <section>
+      <SectionHeader text="REDES Y CONTACTO" />
+      <ParagraphsContainer paragraphs={contactParagraphs} />
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

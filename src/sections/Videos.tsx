@@ -1,7 +1,14 @@
+import SectionHeader from "../components-reusable/SectionHeader"; 
+
+
+
 const Videos = () => {
   return (
-    <div>Videos</div>
-  )
-}
+    <section>
+      <SectionHeader text="VIDEOS" />
 
-export default Videos
+    </section>
+  );
+};
+
+export default Videos;

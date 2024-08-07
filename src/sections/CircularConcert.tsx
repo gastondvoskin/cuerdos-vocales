@@ -1,7 +1,15 @@
+import SectionHeader from "../components-reusable/SectionHeader";
+import ImageComponent from "../components-reusable/ImageComponent";
+import flyer1 from "../assets/images/enterprise/flyer1.webp";
+
 const CircularConcert = () => {
   return (
-    <div>CircularConcert</div>
-  )
-}
+    <section>
+      <SectionHeader text="CONCIERTO CIRCULAR" />
+      <ImageComponent src={flyer1} alt="Pintura en acrílico con cantantes sentados en ronda en un pícnic" />
 
-export default CircularConcert
+    </section>
+  );
+};
+
+export default CircularConcert;

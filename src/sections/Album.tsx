@@ -1,13 +1,19 @@
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import { albumParagraphs } from "../assets/texts/sections"
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+import SectionHeader from "../components-reusable/SectionHeader";
+import { albumParagraphs } from "../assets/texts/sections";
+import ImageComponent from "../components-reusable/ImageComponent";
+import album from "../assets/images/enterprise/album.webp";
+
 
 const Album = () => {
   return (
-    <div>
-      <h2>ALBUM</h2>
-      <ParagraphsContainer paragraphs={albumParagraphs}/>
-    </div>
-  )
-}
+    <section>
+      <SectionHeader text="ALBUM" />
+      <ParagraphsContainer paragraphs={albumParagraphs} />
+      <ImageComponent src={album} alt="Concierto circular" />
 
-export default Album
+    </section>
+  );
+};
+
+export default Album;

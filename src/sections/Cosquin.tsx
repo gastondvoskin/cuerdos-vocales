@@ -1,13 +1,14 @@
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer"
-import { cosquinParagraphs } from "../assets/texts/sections"
+import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+import SectionHeader from "../components-reusable/SectionHeader";
+import { cosquinParagraphs } from "../assets/texts/sections";
 
 const Cosquin = () => {
   return (
-    <div>
-      <h2>COSQUIN</h2>
-      <ParagraphsContainer paragraphs={cosquinParagraphs}/>
-    </div>
-  )
-}
+    <section>
+      <SectionHeader text="COSQUíN" />
+      <ParagraphsContainer paragraphs={cosquinParagraphs} />
+    </section>
+  );
+};
 
-export default Cosquin
+export default Cosquin;
