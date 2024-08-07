@@ -1,7 +1,6 @@
 import SectionHeader from "../components-reusable/SectionHeader";
 import ImageComponent from "../components-reusable/ImageComponent";
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
-
 import dress from "../assets/images/cordura/dress.webp";
 import arrow from "../assets/images/cordura/arrow.webp";
 import shoes from "../assets/images/cordura/shoes.webp";
