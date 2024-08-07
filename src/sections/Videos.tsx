@@ -1,6 +1,6 @@
 import SectionHeader from "../components-reusable/SectionHeader"; 
 import VideoComponent from "../components-reusable/VideoComponent";
-import videos from "../constants/videos";
+import { videos } from "../constants/videos";
 
 const Videos = () => {
   return (
