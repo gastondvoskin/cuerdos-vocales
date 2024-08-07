@@ -14,3 +14,10 @@ export interface IImageComponentProps {
 export interface IVideoComponentProps {
   src: string;
 }
+
+export interface IButtonProps {
+  text: string; 
+  onClick?: () => void;
+  href?: string; 
+  color?: string; 
+}
