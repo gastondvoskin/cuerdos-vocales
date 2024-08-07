@@ -1,4 +1,4 @@
-import Nav from "./Nav";
+import Header from "./Header";
 import Home from "./Home";
 import News from "./News";
 import Videos from "./Videos";
@@ -10,4 +10,4 @@ import CircularConcert from "./CircularConcert";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-export { Nav, Home, News, Videos, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer };
+export { Header, Home, News, Videos, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer };
