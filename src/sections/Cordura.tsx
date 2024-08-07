@@ -7,6 +7,8 @@ const Cordura = () => {
     <section>
       <SectionHeader text="CORDURA" />
       <ParagraphsContainer paragraphs={corduraParagraphs} />
+      <h3>Aprendiendo a bailar</h3>
+      <p>SLIDER</p>
     </section>
   );
 };
