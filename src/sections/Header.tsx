@@ -3,14 +3,16 @@ import ImageComponent from "../components-reusable/ImageComponent";
 import logo from "../assets/images/enterprise/logo.webp"; 
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp"; 
 
-const Nav = () => {
+const Header = () => {
   return (
-    <nav>
-      <SectionHeader text="NAV" />
-      <ImageComponent src={logo} alt="logo" />
-      <ImageComponent src={logoVertical} alt="Logo Vertical" />
-    </nav>
+    <header>
+      <nav>
+        <SectionHeader text="NAV" />
+        <ImageComponent src={logo} alt="logo" />
+        <ImageComponent src={logoVertical} alt="Logo Vertical" />
+      </nav>
+    </header>
   );
 };
 
-export default Nav;
+export default Header;
