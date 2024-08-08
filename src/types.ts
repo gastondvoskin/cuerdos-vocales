@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export interface IParagraphsContainerProps {
   paragraphs: string[];
 }
@@ -20,4 +22,11 @@ export interface IButtonProps {
   onClick?: () => void;
   href?: string; 
   color?: string; 
+}
+
+export interface IIconLinkProps {
+  href: string;
+  Icon: IconType; 
+  // icon: React.ReactNode; 
+  label: string; 
 }
