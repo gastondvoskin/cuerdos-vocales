@@ -4,7 +4,7 @@ import circular1 from "../assets/images/photos/circular-1.webp";
 
 const News = () => {
   return (
-    <section>
+    <section id="news">
       <SectionHeader text="NOVEDADES" />
       <ImageComponent src={circular1} alt="Concierto circular" />
       {/* <div>

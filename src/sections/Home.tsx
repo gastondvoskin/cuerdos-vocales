@@ -8,7 +8,7 @@ import album from "../assets/images/enterprise/album.webp";
 
 const Home = () => {
   return (
-    <section>
+    <section id="home">
       <SectionHeader text="HOME" />
       <div>
         <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" />
