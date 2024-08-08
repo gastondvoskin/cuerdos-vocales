@@ -4,13 +4,7 @@ import { contactParagraphs } from "../assets/texts/sections";
 import IconLink from "../components-reusable/IconLink";
 import { SiGmail } from "react-icons/si";
 import { FaInstagram, FaFacebook, FaYoutube, FaSpotify } from "react-icons/fa";
-import {
-  MAIL,
-  INSTAGRAM,
-  FACEBOOK,
-  YOUTUBE,
-  SPOTIFY,
-} from "../constants/contact";
+import { MAIL, INSTAGRAM, FACEBOOK, YOUTUBE, SPOTIFY } from "../constants/contact";
 
 const Contact = () => {
   return (

@@ -22,6 +22,7 @@ export interface IButtonProps {
   onClick?: () => void;
   href?: string; 
   color?: string; 
+  Icon?: IconType; 
 }
 
 export interface IIconLinkProps {
