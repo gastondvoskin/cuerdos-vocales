@@ -31,3 +31,12 @@ export interface IIconLinkProps {
   // icon: React.ReactNode; 
   label: string; 
 }
+
+export interface ITarget {
+  id: string;
+  text: string;
+}
+
+export interface INavLinkProps {
+  target: ITarget;
+}

@@ -1,0 +1,8 @@
+<App.tsx /> 
+  <NavSmall.tsx />
+    TARGETS.map -> <NavLink target={target} />
+      <Link (from react-scroll) to={target.id}>{target.text}<Link/>
+
+<Home id="home" />
+<News id="news" />
+... 

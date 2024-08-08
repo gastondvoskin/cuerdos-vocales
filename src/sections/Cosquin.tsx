@@ -6,7 +6,7 @@ import { videoCosquin } from "../constants/videos";
 
 const Cosquin = () => {
   return (
-    <section>
+    <section id="cosquin">
       <SectionHeader text="COSQUíN" />
       <ParagraphsContainer paragraphs={cosquinParagraphs} />
       <VideoComponent src={videoCosquin.src} />

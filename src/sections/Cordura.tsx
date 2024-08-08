@@ -7,7 +7,7 @@ import corduraPhoto from "../assets/images/cordura/cordura-photo.webp";
 
 const Cordura = () => {
   return (
-    <section>
+    <section id="cordura">
       <SectionHeader text="CORDURA" />
       <ParagraphsContainer paragraphs={corduraParagraphs} />
       <ImageComponent src={corduraPhoto} alt="Personas bailando en la peña La Cordura" />
