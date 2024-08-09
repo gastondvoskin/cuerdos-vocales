@@ -8,7 +8,7 @@ import { MAIL, INSTAGRAM, FACEBOOK, YOUTUBE, SPOTIFY } from "../constants/contac
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <SectionHeader text="REDES Y CONTACTO" />
       <ParagraphsContainer paragraphs={contactParagraphs} />
       <div>

@@ -1,9 +1,12 @@
-import { Header, Home, Videos, News, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer } from "./sections/index";
+import { Home, Videos, News, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer } from "./sections/index";
+import NavLarge from "./navigation/NavLarge";
+import NavSmall from "./navigation/NavSmall";
 
 function App() {
   return (
     <>
-      <Header />
+      <NavLarge />
+      <NavSmall />
       <Home />
       <News />
       <Videos />

@@ -5,7 +5,7 @@ import Button from "../components-reusable/Button";
 
 const Videos = () => {
   return (
-    <section>
+    <section id="videos">
       <SectionHeader text="VIDEOS" />
       <div>
         {videos.map((video, index) => <VideoComponent src={video.src} key={index} />)}

@@ -9,7 +9,7 @@ import { SPOTIFY_ALBUM, YOUTUBE_ALBUM, ALBUM_APPLE } from "../constants/socials"
 
 const Album = () => {
   return (
-    <section>
+    <section id="album">
       <SectionHeader text="ALBUM" />
       <ParagraphsContainer paragraphs={albumParagraphs} />
       <ImageComponent src={album} alt="Concierto circular" />
