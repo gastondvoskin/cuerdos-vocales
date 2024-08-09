@@ -4,6 +4,10 @@ import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
 import TARGETS from "../constants/sections";
 import NavLink from "./NavLink";
 import { useState } from "react";
+import { FaBars } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+
+
 
 const NavSmall = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -13,7 +17,7 @@ const NavSmall = () => {
       <nav>
         <ImageComponent src={logo} alt="logo" />
         <ImageComponent src={logoVertical} alt="Logo Vertical" />
-        <button onClick={() => {setOpenMenu(!openMenu)}}>MENU (BARS)</button>
+        <button onClick={() => {setOpenMenu(!openMenu)}} title={openMenu ? "Cerrar" : "Abrir"} aria-label={openMenu ? "Cerrar" : "Abrir"}>{openMenu ? <IoClose /> : <FaBars />}</button>
         {openMenu && (
           <ul>
             {TARGETS.map((target, index: number) => (
