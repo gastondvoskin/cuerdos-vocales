@@ -1,9 +1,11 @@
 import { Home, Videos, News, WeAre, Album, Cosquin, Cordura, CircularConcert, Contact, Footer } from "./sections/index";
+import NavLarge from "./navigation/NavLarge";
 import NavSmall from "./navigation/NavSmall";
 
 function App() {
   return (
     <>
+      <NavLarge />
       <NavSmall />
       <Home />
       <News />
