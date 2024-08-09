@@ -11,7 +11,7 @@ const NavSmall = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
-    <header>
+    <header className="text-2xl font-bold underline"> {/* testing Tailwind. Delete className */}
       <nav>
         <ImageComponent src={logo} alt="logo" />
         <ImageComponent src={logoVertical} alt="Logo Vertical" />
