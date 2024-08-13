@@ -47,6 +47,9 @@ export default {
           500: "#666666",
           900: "#333333", 
         },
+      }, 
+      backgroundImage: {
+        'purpleBackground': "url('./src/assets/images/enterprise/bg-purple.jpg')",
       }
     },
   },
