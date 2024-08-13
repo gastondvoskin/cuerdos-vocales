@@ -13,7 +13,7 @@ const NavSmall = () => {
 
   return (
     <header>
-      <nav className="fixed w-full h-20 bg-gradient-to-r bg-pink-200 shadow-md">
+      <nav className="fixed w-full h-20 bg-gradient-to-b from-myPurple-100 via-myWhite-100 to-myPink-500 to-90% shadow-md">
         <div className="h-full flex justify-between items-center">
           <Link to="home" smooth={true} duration={300} className="flex items-center">
             <ImageComponent src={logo} alt="logo" className="h-16" />
@@ -31,7 +31,7 @@ const NavSmall = () => {
           </button>
         </div>
         {openMenu && (
-          <ul className="flex flex-col items-end p-4 gap-2 bg-red-600 bg-gradient-to-b from-green-100 via-purple-500 to-green-600">
+          <ul className="flex flex-col items-end p-4 gap-2 bg-gradient-to-b from-myPink-500 to-myPurple-100">
             {TARGETS.map((target, index: number) => (
               <li>
                 <NavLink key={index} target={target} />
