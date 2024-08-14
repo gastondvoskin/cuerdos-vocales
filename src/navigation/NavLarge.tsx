@@ -1,10 +1,14 @@
 import ImageComponent from "../components-reusable/ImageComponent";
 import logo from "../assets/images/enterprise/logo.webp";
-import logoVertical from "../assets/images/enterprise/logo-vertical.webp"; 
+import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
 import TARGETS from "../constants/sections";
 import NavLink from "./NavLink";
+import { useState } from "react";
+
 
 const NavLarge = () => {
+  const [currentSection, setCurrentSection] = useState<string>("home");
+
   return (
     <header>
       <nav>
@@ -13,7 +17,12 @@ const NavLarge = () => {
         <ul>
           {TARGETS.map((target, index: number) => (
             <li>
-              <NavLink key={index} target={target} />
+              <NavLink
+                key={index}
+                target={target}
+                currentSection={currentSection}
+                setCurrentSection={setCurrentSection}
+              />
             </li>
           ))}
         </ul>

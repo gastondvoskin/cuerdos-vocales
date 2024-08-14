@@ -11,6 +11,7 @@ export interface ISectionHeader {
 export interface IImageComponentProps {
   src: string;
   alt: string; 
+  className?: string;
 }
 
 export interface IVideoComponentProps {
@@ -39,4 +40,7 @@ export interface ITarget {
 
 export interface INavLinkProps {
   target: ITarget;
+  currentSection: string; 
+  setCurrentSection: (section: string) => void; 
+  setOpenMenu?: (value: boolean) => void;
 }
