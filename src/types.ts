@@ -44,3 +44,10 @@ export interface INavLinkProps {
   setCurrentSection: (section: string) => void; 
   setOpenMenu?: (value: boolean) => void;
 }
+
+export interface ISectionContainer {
+  sectionId: string; 
+  children: React.ReactNode;
+  className: string; 
+}
+
