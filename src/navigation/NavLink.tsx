@@ -9,7 +9,7 @@ const NavLink: React.FC<INavLinkProps> = ({ target, currentSection, setCurrentSe
       to={target.id} 
       onClick={() => {
         setCurrentSection(target.id); 
-        setOpenMenu(false)
+        setOpenMenu && setOpenMenu(false); // LargeNav does not have setOpenMenu
       }}
       smooth={true}
       duration={300}
