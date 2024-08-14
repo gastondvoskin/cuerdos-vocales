@@ -1,4 +1,3 @@
-import SectionHeader from "../components-reusable/SectionHeader";
 import ImageComponent from "../components-reusable/ImageComponent";
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
 import dress from "../assets/images/cordura/dress.webp";
@@ -9,7 +8,6 @@ import SectionContainer from "../components-reusable/SectionContainer";
 
 const Home = () => {
   return (
-    // <section id="home" className="pt-20"> {/* move pt-20 to a sectionContainer component */}
     <SectionContainer sectionId="home">
       <div className="flex flex-col items-center">
         <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" className="h-40" />
@@ -23,7 +21,6 @@ const Home = () => {
       </div>
       <ImageComponent src={album} alt="Álbum Sueños y Miradas" />
     </SectionContainer>
-    // </section>
   );
 };
 
