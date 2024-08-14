@@ -6,7 +6,7 @@ import SectionContainer from "../components-reusable/SectionContainer";
 
 const News = () => {
   return (
-    <SectionContainer sectionId="news">
+    <SectionContainer sectionId="news" className="flex flex-col items-center">
       <SectionHeader text="NOVEDADES" />
       <ImageComponent src={circular1} alt="Concierto circular" />
       {/* <div>

@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <SectionContainer sectionId="home" className="flex flex-col items-center ">
+    <SectionContainer sectionId="home" className="flex flex-col items-center">
       <div className="flex flex-col items-center mt-4 mb-5">
         <ImageComponent
           src={logoVertical}
