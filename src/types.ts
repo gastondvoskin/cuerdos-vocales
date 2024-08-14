@@ -48,5 +48,6 @@ export interface INavLinkProps {
 export interface ISectionContainer {
   sectionId: string; 
   children: React.ReactNode;
+  className: string; 
 }
 
