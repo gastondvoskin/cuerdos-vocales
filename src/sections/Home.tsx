@@ -10,10 +10,9 @@ import SectionContainer from "../components-reusable/SectionContainer";
 const Home = () => {
   return (
     // <section id="home" className="pt-20"> {/* move pt-20 to a sectionContainer component */}
-    <SectionContainer>
-      <SectionHeader text="HOME" />
-      <div>
-        <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" />
+    <SectionContainer sectionId="home">
+      <div className="flex flex-col items-center">
+        <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" className="h-40" />
         <p>Grupo vocal de folklore</p>
         <p>Ganador Pre Cosquín</p>
       </div>
@@ -21,7 +20,6 @@ const Home = () => {
         <ImageComponent src={dress} alt="Pollera de bailarina" />
         <ImageComponent src={arrow} alt="Flecha figura de baile" />
         <ImageComponent src={shoes} alt="Zapatos de bailarín" />
-
       </div>
       <ImageComponent src={album} alt="Álbum Sueños y Miradas" />
     </SectionContainer>
