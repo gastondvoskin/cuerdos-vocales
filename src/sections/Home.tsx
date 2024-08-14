@@ -5,10 +5,12 @@ import dress from "../assets/images/cordura/dress.webp";
 import arrow from "../assets/images/cordura/arrow.webp";
 import shoes from "../assets/images/cordura/shoes.webp";
 import album from "../assets/images/enterprise/album.webp";
+import SectionContainer from "../components-reusable/SectionContainer";
 
 const Home = () => {
   return (
-    <section id="home" className="pt-20"> {/* move pt-20 to a sectionContainer component */}
+    // <section id="home" className="pt-20"> {/* move pt-20 to a sectionContainer component */}
+    <SectionContainer>
       <SectionHeader text="HOME" />
       <div>
         <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" />
@@ -22,7 +24,8 @@ const Home = () => {
 
       </div>
       <ImageComponent src={album} alt="Álbum Sueños y Miradas" />
-    </section>
+    </SectionContainer>
+    // </section>
   );
 };
 
