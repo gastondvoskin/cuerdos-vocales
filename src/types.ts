@@ -40,4 +40,7 @@ export interface ITarget {
 
 export interface INavLinkProps {
   target: ITarget;
+  currentSection: string; 
+  setCurrentSection: (section: string) => void; 
+  setOpenMenu: (value: boolean) => void;
 }

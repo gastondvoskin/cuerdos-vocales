@@ -10,6 +10,7 @@ import { Link } from "react-scroll";
 
 const NavSmall = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [currentSection, setCurrentSection] = useState<string>("home"); 
 
   return (
     <header>
@@ -34,7 +35,7 @@ const NavSmall = () => {
           <ul className="flex flex-col items-end p-4 gap-2 bg-myWhite-100">
             {TARGETS.map((target, index: number) => (
               <li>
-                <NavLink key={index} target={target} />
+                <NavLink key={index} target={target} currentSection={currentSection} setCurrentSection={setCurrentSection} setOpenMenu={setOpenMenu} />
               </li>
             ))}
           </ul>
