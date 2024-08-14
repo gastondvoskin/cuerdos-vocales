@@ -8,7 +8,7 @@ import album from "../assets/images/enterprise/album.webp";
 
 const Home = () => {
   return (
-    <section id="home">
+    <section id="home" className="pt-20"> {/* move pt-20 to a sectionContainer component */}
       <SectionHeader text="HOME" />
       <div>
         <ImageComponent src={logoVertical} alt="Logo Cuerdos Vocales" />

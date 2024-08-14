@@ -1,11 +1,11 @@
 import { IImageComponentProps } from "../types"; 
 
-const ImageComponent: React.FC<IImageComponentProps> = ({ src, alt }) => {
+const ImageComponent: React.FC<IImageComponentProps> = ({ src, alt, className }) => {
   return (
     <img 
       src={src} 
       alt={alt} 
-      width="200px" /* replace with className */
+      className={className} 
       loading="lazy"
     />
   );
