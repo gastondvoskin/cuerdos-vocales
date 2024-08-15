@@ -10,10 +10,12 @@ import shoes from "../assets/images/z.OLD-cordura/shoes.png";
 import album from "../assets/images/enterprise/album.webp";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { Link } from "react-scroll";
+import { SECTIONS } from "../constants/sections";
+
 
 const Home = () => {
   return (
-    <SectionContainer sectionId="home" className="flex flex-col items-center">
+    <SectionContainer section={SECTIONS.HOME}>
       <div className="flex flex-col items-center mt-4 mb-5">
         <ImageComponent
           src={logoVertical}

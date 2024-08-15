@@ -1,23 +1,24 @@
 import ImageComponent from "../components-reusable/ImageComponent";
 import logo from "../assets/images/enterprise/logo.webp";
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
-import TARGETS from "../constants/sections";
+import { TARGETS } from "../constants/sections";
 import NavLink from "./NavLink";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-scroll";
+import { SECTIONS } from "../constants/sections";
 
 const NavSmall = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
-  const [currentSection, setCurrentSection] = useState<string>("home");
+  const [currentSection, setCurrentSection] = useState<string>(SECTIONS.HOME);
 
   return (
     <header>
       <nav className="fixed w-full h-20 shadow-md">
         <div className="h-full flex justify-between items-center bg-myWhite-100">
           <Link
-            to="home"
+            to={SECTIONS.HOME}
             smooth={true}
             duration={300}
             className="flex items-center"
