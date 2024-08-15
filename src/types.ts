@@ -51,3 +51,7 @@ export interface ISectionContainer {
   // className?: string; 
 }
 
+export interface ISectionLinkProps {
+  text: string;
+  to: string; 
+}

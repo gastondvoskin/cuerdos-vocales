@@ -6,7 +6,6 @@ const SectionContainer: React.FC<ISectionContainer> = ({
   children,
   // className,
 }) => {
-  console.log({ section });
   const orangeBgSections = [SECTIONS.HOME, SECTIONS.VIDEOS, SECTIONS.ALBUM, SECTIONS.CIRCULAR_CONCERT];
   const purpleBgSections = [SECTIONS.NEWS, SECTIONS.WE_ARE];
 
@@ -14,7 +13,8 @@ const SectionContainer: React.FC<ISectionContainer> = ({
     <section
       id={section}
       className={`
-        pt-20 
+        pt-20
+        pb-10 
         flex flex-col items-center
         ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_top,_#f4ded8,_#eaeaea)]"}
         ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"}

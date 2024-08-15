@@ -13,7 +13,7 @@ const NavLink: React.FC<INavLinkProps> = ({ target, currentSection, setCurrentSe
       }}
       smooth={true}
       duration={300}
-      className={`${isCurrent ? "border-b-2 border-myOlive-900 text-myOlive-900" : " text-myPurple-500"}`}
+      className={`${isCurrent ? "border-b-2 border-myOlive-900 text-myOlive-900" : " text-myPurple-500"} hover:bg-myPurple-100 hover:text-myWhite-500 cursor-pointer`}
     >
       {target.text}
     </Link>

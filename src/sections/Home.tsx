@@ -3,7 +3,6 @@ import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
 // import dress from "../assets/images/cordura/dress.webp";
 // import arrow from "../assets/images/cordura/arrow.webp";
 // import shoes from "../assets/images/cordura/shoes.webp";
-
 import dress from "../assets/images/z.OLD-cordura/dress.png";
 import arrow from "../assets/images/z.OLD-cordura/arrow.png";
 import shoes from "../assets/images/z.OLD-cordura/shoes.png";
@@ -23,12 +22,12 @@ const Home = () => {
           className="w-64 border-10"
         />
         {/* reference: https://design2tailwind.com/blog/tailwindcss-gradient-text/ */}
-        <div className="text-sm bg-gradient-to-r from-myBrown-900 via-myBrown-100 to-myOrange-900 inline-block text-transparent bg-clip-text">
+        <div className="text-sm bg-gradient-to-r from-myBrown-900 via-myBrown-100 to-myOrange-900 inline-block text-transparent bg-clip-text text-center">
           <p>Grupo vocal de folklore</p>
           <p>Ganador Pre Cosquín</p>
         </div>
       </div>
-      <div className="flex justify-center gap-4 mb-4">
+      <div className="flex justify-center gap-4 mb-4 ">
         <ImageComponent
           src={dress}
           alt="Pollera de bailarina"
