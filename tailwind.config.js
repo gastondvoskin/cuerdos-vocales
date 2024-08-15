@@ -48,6 +48,15 @@ export default {
           900: "#333333", 
         },
       }, 
+      animation: {
+        spin: 'spin 30s linear infinite',
+      }, 
+      keyframes: {
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
       backgroundImage: {
         'purpleBackground': "url('./src/assets/images/enterprise/bg-purple.jpg')",
       }
