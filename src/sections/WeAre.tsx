@@ -25,7 +25,7 @@ const WeAre = () => {
           Leer más
         </button>)   
       }
-      <ImageComponent src={circular2} alt="Integrantes de Cuerdos Vocales mirando a cámara" />
+      <ImageComponent src={circular2} alt="Integrantes de Cuerdos Vocales mirando a cámara" className="w-full h-44 object-cover"/>
     </SectionContainer>
   );
 };
