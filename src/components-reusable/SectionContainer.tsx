@@ -9,11 +9,11 @@ const SectionContainer: React.FC<ISectionContainer> = ({ section, children, /* c
     <section
       id={section}
       className={`
-        pt-20
         flex flex-col items-center
         ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_top,_#f4ded8,_#eaeaea)]"}
         ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"} 
         ${section === SECTIONS.WE_ARE ? "pb-0" : "pb-10"}
+        ${section === SECTIONS.CONTACT ? "pt-10" : "pt-20"}
       `}
     >
       {children}
