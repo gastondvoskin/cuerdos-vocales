@@ -10,8 +10,8 @@ const Videos = () => {
   return (
     <SectionContainer section={SECTIONS.VIDEOS}>
       <SectionHeader text="VIDEOS" />
-      <div>
-        {videos.map((video, index) => <VideoComponent src={video.src} key={index} />)}
+      <div className="w-full">
+        {videos.map((video, index) => <VideoComponent video={video} key={index} />)}
       </div>
       <Button text="Cargar más videos"/>
     </SectionContainer>

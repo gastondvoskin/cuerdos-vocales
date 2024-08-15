@@ -1,13 +1,12 @@
-import { IParagraphsContainerProps } from "../types"
+import { IParagraphsContainerProps } from "../types";
 
 const ParagraphsContainer: React.FC<IParagraphsContainerProps> = ({ paragraphs }) => {
-
   return (
-    <div className="px-3 pt-5">
+    <div className="px-3 pt-5 text-sm">
       {paragraphs.map((paragraph, index: number) => (
-        <>
-          <p key={index} className="pb-2 text-sm">{paragraph}</p>
-        </>
+        <p key={index} className="pb-2 ">
+          {paragraph}
+        </p>
       ))}
     </div>
   );
