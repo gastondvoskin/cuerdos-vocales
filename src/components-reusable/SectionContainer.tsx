@@ -13,7 +13,8 @@ const SectionContainer: React.FC<ISectionContainer> = ({ section, children, /* c
         pb-10 
         flex flex-col items-center
         ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_top,_#f4ded8,_#eaeaea)]"}
-        ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"}  
+        ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"} 
+        ${section === SECTIONS.WE_ARE && "pb-0"}
       `}
     >
       {children}
