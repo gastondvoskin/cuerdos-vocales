@@ -13,7 +13,7 @@ const Contact = () => {
     <SectionContainer section={SECTIONS.CONTACT}>
       <SectionHeader text="REDES Y CONTACTO" />
       <ParagraphsContainer paragraphs={contactParagraphs} />
-      <div className="flex gap-4">
+      <div className="flex gap-4 my-4">
         <IconLink href={`mailto:${MAIL}`} Icon={SiGmail} label="Mail" color="red" />
         <IconLink href={INSTAGRAM} Icon={FaInstagram} label="Instagram" color="#6c378f" />
         <IconLink href={FACEBOOK} Icon={FaFacebook} label="Facebook" color="#1013cc" />
