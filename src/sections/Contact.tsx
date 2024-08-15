@@ -5,10 +5,11 @@ import IconLink from "../components-reusable/IconLink";
 import { SiGmail } from "react-icons/si";
 import { FaInstagram, FaFacebook, FaYoutube, FaSpotify } from "react-icons/fa";
 import { MAIL, INSTAGRAM, FACEBOOK, YOUTUBE, SPOTIFY } from "../constants/contact";
+import SectionContainer from "../components-reusable/SectionContainer";
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <SectionContainer sectionId="contact" className="flex flex-col items-center">
       <SectionHeader text="REDES Y CONTACTO" />
       <ParagraphsContainer paragraphs={contactParagraphs} />
       <div>
@@ -18,7 +19,7 @@ const Contact = () => {
         <IconLink href={YOUTUBE} Icon={FaYoutube} label="YouTube" />
         <IconLink href={SPOTIFY} Icon={FaSpotify} label="Spotify" />
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
