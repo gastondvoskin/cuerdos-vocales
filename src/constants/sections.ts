@@ -22,6 +22,6 @@ export const TARGETS: ITarget[] = [
   { id: SECTIONS.ALBUM, text: "ÁLBUM" },
   { id: SECTIONS.COSQUIN, text: "COSQUÍN" },
   { id: SECTIONS.CORDURA, text: "CORDURA" },
-  { id: SECTIONS.CORDURA, text: "CONCIERTO CIRCULAR" },
+  { id: SECTIONS.CIRCULAR_CONCERT, text: "CONCIERTO CIRCULAR" },
   { id: SECTIONS.CONTACT, text: "REDES Y CONTACTO" },
 ]; 
