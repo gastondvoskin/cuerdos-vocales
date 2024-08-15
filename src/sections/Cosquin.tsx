@@ -10,7 +10,7 @@ import { SECTIONS } from "../constants/sections";
 const Cosquin = () => {
   return (
     <SectionContainer section={SECTIONS.COSQUIN}>
-      <SectionHeader text="COSQUíN" />
+      <SectionHeader text="COSQUÍN" />
       <ParagraphsContainer paragraphs={cosquinParagraphs} />
       <VideoComponent src={videoCosquin.src} />
     </SectionContainer>
