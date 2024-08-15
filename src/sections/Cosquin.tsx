@@ -4,11 +4,12 @@ import { cosquinParagraphs } from "../assets/texts/sections";
 import VideoComponent from "../components-reusable/VideoComponent";
 import { videoCosquin } from "../constants/videos";
 import SectionContainer from "../components-reusable/SectionContainer";
+import { SECTIONS } from "../constants/sections";
 
 
 const Cosquin = () => {
   return (
-    <SectionContainer sectionId="home" className="flex flex-col items-center">
+    <SectionContainer section={SECTIONS.COSQUIN}>
       <SectionHeader text="COSQUíN" />
       <ParagraphsContainer paragraphs={cosquinParagraphs} />
       <VideoComponent src={videoCosquin.src} />

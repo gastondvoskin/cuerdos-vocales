@@ -3,11 +3,12 @@ import VideoComponent from "../components-reusable/VideoComponent";
 import { videos } from "../constants/videos";
 import Button from "../components-reusable/Button";
 import SectionContainer from "../components-reusable/SectionContainer";
+import { SECTIONS } from "../constants/sections";
 
 
 const Videos = () => {
   return (
-    <SectionContainer sectionId="videos" className="flex flex-col items-center">
+    <SectionContainer section={SECTIONS.VIDEOS}>
       <SectionHeader text="VIDEOS" />
       <div>
         {videos.map((video, index) => <VideoComponent src={video.src} key={index} />)}

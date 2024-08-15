@@ -7,11 +7,12 @@ import Button from "../components-reusable/Button";
 import { FaYoutube, FaSpotify, FaItunesNote } from "react-icons/fa";
 import { SPOTIFY_ALBUM, YOUTUBE_ALBUM, ALBUM_APPLE } from "../constants/socials";
 import SectionContainer from "../components-reusable/SectionContainer";
+import { SECTIONS } from "../constants/sections";
 
 
 const Album = () => {
   return (
-    <SectionContainer sectionId="album" className="flex flex-col items-center">
+    <SectionContainer section={SECTIONS.ALBUM}>
       <SectionHeader text="ALBUM" />
       <ParagraphsContainer paragraphs={albumParagraphs} />
       <ImageComponent src={album} alt="Concierto circular" />

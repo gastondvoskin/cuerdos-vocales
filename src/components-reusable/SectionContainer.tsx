@@ -1,22 +1,22 @@
 import { ISectionContainer } from "../types";
 
 const SectionContainer: React.FC<ISectionContainer> = ({
-  sectionId,
+  section,
   children,
-  className,
+  // className,
 }) => {
-  console.log({ sectionId });
+  console.log({ section });
   const orangeBgSections = ["home", "videos", "album", "circularConcert"];
   const purpleBgSections = ["news", "weAre"];
 
   return (
     <section
-      id={sectionId}
+      id={section}
       className={`
         pt-20 
-        ${className} 
-        ${orangeBgSections.includes(sectionId) && "bg-[conic-gradient(at_top,_#f4ded8,_#eaeaea)]"}
-        ${purpleBgSections.includes(sectionId) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"}
+        flex flex-col items-center
+        ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_top,_#f4ded8,_#eaeaea)]"}
+        ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#967BB6,_#F29C85)]"}
       `}
     >
       {children}

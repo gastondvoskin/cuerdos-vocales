@@ -6,10 +6,11 @@ import { SiGmail } from "react-icons/si";
 import { FaInstagram, FaFacebook, FaYoutube, FaSpotify } from "react-icons/fa";
 import { MAIL, INSTAGRAM, FACEBOOK, YOUTUBE, SPOTIFY } from "../constants/contact";
 import SectionContainer from "../components-reusable/SectionContainer";
+import { SECTIONS } from "../constants/sections";
 
 const Contact = () => {
   return (
-    <SectionContainer sectionId="contact" className="flex flex-col items-center">
+    <SectionContainer section={SECTIONS.CONTACT}>
       <SectionHeader text="REDES Y CONTACTO" />
       <ParagraphsContainer paragraphs={contactParagraphs} />
       <div>

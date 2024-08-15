@@ -1,7 +1,7 @@
 import ImageComponent from "../components-reusable/ImageComponent";
 import logo from "../assets/images/enterprise/logo.webp";
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
-import TARGETS from "../constants/sections";
+import { TARGETS } from "../constants/sections";
 import NavLink from "./NavLink";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
