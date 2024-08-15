@@ -1,6 +1,6 @@
 import { IIconLinkProps } from "../types";
 
-const IconLink: React.FC<IIconLinkProps> = ({ href, Icon, label }) => {
+const IconLink: React.FC<IIconLinkProps> = ({ href, Icon, label, color }) => {
   return (
     <a
       href={href}
@@ -9,7 +9,7 @@ const IconLink: React.FC<IIconLinkProps> = ({ href, Icon, label }) => {
       aria-label={label}
       title={label}
     >
-      <Icon />
+      <Icon size={32} color={color} />
     </a>
   );
 };
