@@ -12,7 +12,7 @@ const Cosquin = () => {
     <SectionContainer section={SECTIONS.COSQUIN}>
       <SectionHeader text="COSQUÍN" />
       <ParagraphsContainer paragraphs={cosquinParagraphs} />
-      <VideoComponent src={videoCosquin.src} />
+      <VideoComponent video={videoCosquin} />
     </SectionContainer>
   );
 };
