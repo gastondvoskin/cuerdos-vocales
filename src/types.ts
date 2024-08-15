@@ -14,8 +14,13 @@ export interface IImageComponentProps {
   className?: string;
 }
 
-export interface IVideoComponentProps {
+interface IVideo {
   src: string;
+  label: string;
+}
+
+export interface IVideoComponentProps {
+  video: IVideo;
 }
 
 export interface IButtonProps {

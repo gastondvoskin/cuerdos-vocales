@@ -48,7 +48,7 @@ const Home = () => {
         <ImageComponent
           src={album}
           alt="Álbum Sueños y Miradas"
-          className="h-40 rounded-full"
+          className="h-40 aspect-square rounded-full shadow-lg"
         />
       </Link>
     </SectionContainer>
