@@ -1,13 +1,14 @@
 import ImageComponent from "../components-reusable/ImageComponent";
 import logo from "../assets/images/enterprise/logo.webp";
 import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
-import TARGETS from "../constants/sections";
+import { TARGETS } from "../constants/sections";
 import NavLink from "./NavLink";
 import { useState } from "react";
+import { SECTIONS } from "../constants/sections";
 
 
 const NavLarge = () => {
-  const [currentSection, setCurrentSection] = useState<string>("home");
+  const [currentSection, setCurrentSection] = useState<string>(SECTIONS.HOME);
 
   return (
     <header>
