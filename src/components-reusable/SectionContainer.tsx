@@ -2,8 +2,8 @@ import { SECTIONS } from "../constants/sections";
 import { ISectionContainer } from "../types";
 
 const SectionContainer: React.FC<ISectionContainer> = ({ section, children, /* className, */ }) => {
-  const orangeBgSections = [SECTIONS.HOME, SECTIONS.VIDEOS, SECTIONS.ALBUM, SECTIONS.CIRCULAR_CONCERT];
-  const purpleBgSections = [SECTIONS.NEWS, SECTIONS.WE_ARE];
+  const orangeBgSections = [SECTIONS.HOME, SECTIONS.VIDEOS, SECTIONS.ALBUM, SECTIONS.CIRCULAR_CONCERT, SECTIONS.CORDURA, SECTIONS.CONTACT];
+  const purpleBgSections = [SECTIONS.NEWS, SECTIONS.WE_ARE, SECTIONS.COSQUIN, SECTIONS.CIRCULAR_CONCERT];
 
   return (
     <section
