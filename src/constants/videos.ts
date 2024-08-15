@@ -70,7 +70,6 @@ const videos = [
 const videoCosquin = {
   label: "Andando en Cosquín",
   src: "https://www.youtube.com/embed/CcvmvG8PTPg?si=UiCrmIk7CPghhg9q",
-  linkYoutube: "https://www.youtube.com/watch?v=CcvmvG8PTPg",
 };
 
 export { videos, videoCosquin };
