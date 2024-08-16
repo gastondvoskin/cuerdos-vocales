@@ -51,6 +51,7 @@ export default {
       animation: {
         spin: 'spin 30s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
+        'circular-motion': 'circular-motion 4s infinite linear',
       }, 
       keyframes: {
         spin: {
@@ -60,6 +61,13 @@ export default {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        'circular-motion': {
+          '0%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '25%': { transform: 'translate(50px, 0) rotate(90deg)' },
+          '50%': { transform: 'translate(50px, 50px) rotate(180deg)' },
+          '75%': { transform: 'translate(0, 50px) rotate(270deg)' },
+          '100%': { transform: 'translate(0, 0) rotate(360deg)' },
         },
       },
       backgroundImage: {

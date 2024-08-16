@@ -18,24 +18,26 @@ const Album = () => {
     <SectionContainer section={SECTIONS.ALBUM}>
       <SectionHeader text="ALBUM" />
       <ParagraphsContainer paragraphs={albumParagraphs} />
-      <ImageComponent src={album} alt="Concierto circular" className="w-40 rounded-full aspect-square my-3 animate-spin z-0" />
+      <ImageComponent src={album} alt="Concierto circular" className="w-40 rounded-full aspect-square my-3 animate-spin z-0 drop-shadow-xl" />
       <Button
         text="Reproducir en Spotify"
         href={SPOTIFY_ALBUM}
-        className="bg-myWhite-500 text-myOlive-100 hover:bg-myOlive-100 hover:text-myWhite-500 "
+        bgColor="myWhite-500"
+        textColor="myOlive-100"
         Icon={FaSpotify}
       />
       <Button
         text="Reproducir en Youtube"
         href={YOUTUBE_ALBUM}
-        className="bg-myWhite-500 text-red-600 hover:bg-red-600 hover:text-myWhite-500"
+        bgColor="myWhite-500"
+        textColor="red-600"
         Icon={FaYoutube}
       />
       <Button
         text="Reproducir en Apple Music"
         href={ALBUM_APPLE}
-        className="bg-myWhite-500 text-myPurple-100 hover:bg-myPurple-100 hover:text-myWhite-500"
-        color="#5e93c4"
+        bgColor="myWhite-500"
+        textColor="myPurple-100"
         Icon={FaItunesNote}
       />
     </SectionContainer>
