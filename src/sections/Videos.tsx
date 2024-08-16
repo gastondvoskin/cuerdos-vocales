@@ -8,8 +8,16 @@ import { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
 
 const Videos = () => {
-  const [numberOfVideos, setNumberOfVideos] = useState<number>(1);
-  const isDisabled = numberOfVideos >= videos.length;
+  const [numberOfVideos, setNumberOfVideos] = useState<number>(10);
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+
+  const handleViewMore = () => {
+    setNumberOfVideos((prevNumberOfVideos) => {
+      const newNumberOfVideos = prevNumberOfVideos + 2;
+      setIsDisabled(newNumberOfVideos >= videos.length);
+      return newNumberOfVideos;
+    });
+  };
 
   return (
     <SectionContainer section={SECTIONS.VIDEOS}>
@@ -19,7 +27,7 @@ const Videos = () => {
           <VideoComponent video={video} key={index} />
         ))}
       </div>
-      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={() => setNumberOfVideos(numberOfVideos + 2)} Icon={MdExpandMore}/>
+      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={handleViewMore} Icon={MdExpandMore}/>
     </SectionContainer>
   );
 };

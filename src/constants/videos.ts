@@ -44,20 +44,12 @@ const videos = [
     src: "https://www.youtube.com/embed/3MXFKl37DHE?si=bt4EeRDOqv_e0C5t",
   },
   {
-    label: "Canción de las cantinas ft. Nacho Vidal y Nadia Szachniuk",
-    src: "https://www.youtube.com/embed/CEjClaV7KsU?si=VUc4EK1lQMu0cP_D",
-  },
-  {
     label: "Alajita ft. Juan Quintero",
     src: "https://www.youtube.com/embed/3qYzsty_0Wk?si=6J51jhT9mHvUoAIF",
   },
   {
     label: "Arriba quemando el Sol ft. Milena Salamanca",
     src: "https://www.youtube.com/embed/4KoyawdIVfo?si=FJITf_T4Ds_P9_Fj",
-  },
-  {
-    label: "Canción de las cantinas ft. Nacho Vidal y Nadia Szachniuk",
-    src: "https://www.youtube.com/embed/CEjClaV7KsU?si=VUc4EK1lQMu0cP_D",
   },
   {
     label: "Sumaj Pachamama ft. La Charo",
