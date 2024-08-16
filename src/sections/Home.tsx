@@ -3,13 +3,15 @@ import logoVertical from "../assets/images/enterprise/logo-vertical.webp";
 // import dress from "../assets/images/cordura/dress.webp";
 // import arrow from "../assets/images/cordura/arrow.webp";
 // import shoes from "../assets/images/cordura/shoes.webp";
-import dress from "../assets/images/z.OLD-cordura/dress.png";
-import arrow from "../assets/images/z.OLD-cordura/arrow.png";
-import shoes from "../assets/images/z.OLD-cordura/shoes.png";
+// import dress from "../assets/images/z.OLD-cordura/dress.png";
+// import arrow from "../assets/images/z.OLD-cordura/arrow.png";
+// import shoes from "../assets/images/z.OLD-cordura/shoes.png";
+// import gaucho from "../assets/images/gaucho.png";
 import album from "../assets/images/enterprise/album.webp";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { Link } from "react-scroll";
-import { SECTIONS } from "../constants/sections";
+import { SECTIONS } from "../constants/sections"; 
+// import styles from "./Home.module.css"; 
 
 
 const Home = () => {
@@ -27,7 +29,7 @@ const Home = () => {
           <p>Ganador Pre Cosquín</p>
         </div>
       </div>
-      <div className="flex justify-center gap-4 mb-4 ">
+      {/* <div className="flex justify-center gap-4 mb-4 ">
         <ImageComponent
           src={dress}
           alt="Pollera de bailarina"
@@ -43,12 +45,17 @@ const Home = () => {
           alt="Zapatos de bailarín"
           className="h-10"
         />
-      </div>
+        <ImageComponent
+          src={gaucho}
+          alt="Zapatos de bailarín"
+          className="h-10"
+        />
+      </div> */}
       <Link to="album" smooth={true} duration={300}>
         <ImageComponent
           src={album}
           alt="Álbum Sueños y Miradas"
-          className="h-40 aspect-square rounded-full shadow-lg"
+          className={`h-40 aspect-square rounded-full shadow-lg object-cover `}
         />
       </Link>
     </SectionContainer>
