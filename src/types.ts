@@ -30,6 +30,8 @@ export interface IButtonProps {
   color?: string; 
   Icon?: IconType; 
   className?: string;
+  bgColor?: string;
+  textColor?: string;
 }
 
 export interface IIconLinkProps {

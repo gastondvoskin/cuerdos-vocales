@@ -1,7 +1,7 @@
 import SectionHeader from "../components-reusable/SectionHeader";
 import VideoComponent from "../components-reusable/VideoComponent";
 import { videos } from "../constants/videos";
-// import Button from "../components-reusable/Button";
+import Button from "../components-reusable/Button";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { SECTIONS } from "../constants/sections";
 import { useState } from "react";
@@ -26,7 +26,7 @@ const Videos = () => {
         {isDisabled ? "Todos los videos cargados" : "Cargar más videos"}
       </button>
 
-      {/* <Button text="Cargar más videos"/> */}
+      <Button text="Cargar más videos" bgColor="myWhite-500"/>
     </SectionContainer>
   );
 };
