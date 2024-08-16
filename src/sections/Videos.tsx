@@ -18,15 +18,7 @@ const Videos = () => {
           <VideoComponent video={video} key={index} />
         ))}
       </div>
-      <button
-        disabled={isDisabled}
-        className={`bg-myOlive-100 px-3 py-2 rounded-2xl shadow-lg text-myWhite-500 hover:text-myOlive-100 hover:bg-myWhite-500 disabled:opacity-50`}
-        onClick={() => setNumberOfVideos(numberOfVideos + 2)}
-      >
-        {isDisabled ? "Todos los videos cargados" : "Cargar más videos"}
-      </button>
-
-      <Button text="Cargar más videos" bgColor="myWhite-500"/>
+      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={() => setNumberOfVideos(numberOfVideos + 2)} />
     </SectionContainer>
   );
 };

@@ -32,6 +32,7 @@ export interface IButtonProps {
   className?: string;
   bgColor?: string;
   textColor?: string;
+  isDisabled?: boolean; 
 }
 
 export interface IIconLinkProps {
