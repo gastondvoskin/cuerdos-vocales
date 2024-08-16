@@ -11,7 +11,7 @@ const News = () => {
   return (
     <SectionContainer section={SECTIONS.NEWS}>
       <SectionHeader text="NOVEDADES" />
-      <ImageComponent src={circular1} alt="Concierto circular" className="w-52 aspect-square rounded-full object-cover shadow-xl"/>
+      <ImageComponent src={circular1} alt="Concierto circular" className="w-52 aspect-square rounded-full object-cover drop-shadow-xl"/>
       <ParagraphsContainer paragraphs={newsParagraphs}/>
       <SectionLink to={SECTIONS.CIRCULAR_CONCERT} text="Ver próximo concierto circular" />
     </SectionContainer>
