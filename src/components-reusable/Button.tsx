@@ -1,6 +1,6 @@
 import { IButtonProps } from "../types";
 
-const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, textColor, isDisabled }) => {
+const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, textColor, isDisabled, className }) => {
   const sharedClassName = `flex items-center gap-2 m-2 px-3 py-2 rounded-3xl shadow-lg bg-${bgColor} text-${textColor} hover:bg-${!isDisabled && textColor} hover:text-${!isDisabled && bgColor}`;
 
   if (href) {
@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, te
     );
   } else {
     return (
-      <button onClick={onClick} className={sharedClassName} disabled={isDisabled}>
+      <button onClick={onClick} className={`${sharedClassName} ${className}`} disabled={isDisabled}>
         {text}
         {Icon && <Icon />}
       </button>
