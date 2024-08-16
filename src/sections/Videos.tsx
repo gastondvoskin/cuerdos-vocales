@@ -5,6 +5,7 @@ import Button from "../components-reusable/Button";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { SECTIONS } from "../constants/sections";
 import { useState } from "react";
+import { MdExpandMore } from "react-icons/md";
 
 const Videos = () => {
   const [numberOfVideos, setNumberOfVideos] = useState<number>(1);
@@ -18,7 +19,7 @@ const Videos = () => {
           <VideoComponent video={video} key={index} />
         ))}
       </div>
-      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={() => setNumberOfVideos(numberOfVideos + 2)} />
+      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={() => setNumberOfVideos(numberOfVideos + 2)} Icon={MdExpandMore}/>
     </SectionContainer>
   );
 };

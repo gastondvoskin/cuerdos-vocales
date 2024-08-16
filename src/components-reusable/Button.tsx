@@ -13,8 +13,8 @@ const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, te
   } else {
     return (
       <button onClick={onClick} className={sharedClassName} disabled={isDisabled}>
-        {Icon && <Icon />}
         {text}
+        {Icon && <Icon />}
       </button>
     );
   }
