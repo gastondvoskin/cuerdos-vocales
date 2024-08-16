@@ -18,7 +18,7 @@ const Album = () => {
     <SectionContainer section={SECTIONS.ALBUM}>
       <SectionHeader text="ALBUM" />
       <ParagraphsContainer paragraphs={albumParagraphs} />
-      <ImageComponent src={album} alt="Concierto circular" className="w-40 rounded-full aspect-square my-3 animate-spin z-0" />
+      <ImageComponent src={album} alt="Concierto circular" className="w-40 rounded-full aspect-square my-3 animate-spin z-0 drop-shadow-xl" />
       <Button
         text="Reproducir en Spotify"
         href={SPOTIFY_ALBUM}

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
 
 const Videos = () => {
-  const [numberOfVideos, setNumberOfVideos] = useState<number>(10);
+  const [numberOfVideos, setNumberOfVideos] = useState<number>(1);
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
   const handleViewMore = () => {
