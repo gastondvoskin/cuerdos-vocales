@@ -15,7 +15,7 @@ const NavSmall = () => {
 
   return (
     <header className="md:hidden">
-      <nav className="fixed w-full h-20 shadow-md z-10">
+      <nav className="fixed w-full h-16 shadow-md z-10">
         <div className="h-full flex justify-between items-center bg-myWhite-100">
           <Link
             to={SECTIONS.HOME}

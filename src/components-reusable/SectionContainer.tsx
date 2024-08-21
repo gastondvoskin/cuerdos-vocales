@@ -14,6 +14,7 @@ const SectionContainer: React.FC<ISectionContainer> = ({ section, children, /* c
         ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#b4acbe,_#9052ce)]"} 
         ${section === SECTIONS.WE_ARE ? "pb-0" : "pb-10"}
         ${section === SECTIONS.CONTACT ? "pt-10" : "pt-20"}
+        ${section === SECTIONS.HOME && "pt-5 pb-0"}
       `}
     >
       {children}
