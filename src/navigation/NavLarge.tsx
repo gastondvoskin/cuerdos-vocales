@@ -11,7 +11,7 @@ const NavLarge = () => {
   const [currentSection, setCurrentSection] = useState<string>(SECTIONS.HOME);
 
   return (
-    <header className="hidden md:block">
+    <header className="hidden lg:block">
       <nav className="fixed w-full h-16 shadow-md z-10">
         <div className="h-full flex justify-between items-center bg-myWhite-100">
           <Link

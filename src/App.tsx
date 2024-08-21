@@ -3,6 +3,8 @@ import NavLarge from "./navigation/NavLarge";
 import NavSmall from "./navigation/NavSmall";
 
 function App() {
+  // console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}`); // laptop 1280, 585; monitor 1920, 945
+
   return (
     <>
       <NavLarge />
