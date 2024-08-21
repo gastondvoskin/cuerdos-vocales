@@ -8,9 +8,9 @@ const IconLink: React.FC<IIconLinkProps> = ({ href, Icon, label, color }) => {
       rel="noopeneer noreferrer"
       aria-label={label}
       title={label}
-      className="transition-transform transform hover:scale-125"
+      className="transition-transform transform hover:scale-150"
     >
-      <Icon size={44} color={color} />
+      <Icon size={38} color={color} />
     </a>
   );
 };

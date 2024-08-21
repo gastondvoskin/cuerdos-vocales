@@ -33,7 +33,7 @@ const WeAre = () => {
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"
-        className="w-full h-44 object-cover"
+        className="w-11/12 max-w-lg rounded-3xl"
       />
     </SectionContainer>
   );

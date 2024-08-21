@@ -11,7 +11,7 @@ const Cordura = () => {
   return (
     <SectionContainer section={SECTIONS.CORDURA}>
       <SectionHeader text="CORDURA" />
-      <ImageComponent src={corduraLogo} alt="Personas bailando en la peña La Cordura" className="w-full h-32 object-cover  object-top" />
+      <ImageComponent src={corduraLogo} alt="Logo de La Cordura" className="w-full aspect-[7/4] max-w-2xl max-h-52 object-cover  object-top" />
       <ParagraphsContainer paragraphs={corduraParagraphs} />
       {/* <h3>Aprendiendo a bailar</h3> */}
       {/* <p>SLIDER</p> */}
