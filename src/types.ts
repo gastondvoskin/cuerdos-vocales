@@ -44,6 +44,7 @@ export interface IIconLinkProps {
 export interface ITarget {
   id: string;
   text: string;
+  icon: IconType; 
 }
 
 export interface INavLinkProps {

@@ -12,7 +12,7 @@ const Cosquin = () => {
     <SectionContainer section={SECTIONS.COSQUIN}>
       <SectionHeader text="COSQUÍN" />
       <ParagraphsContainer paragraphs={cosquinParagraphs} />
-      <div className="w-full">
+      <div className="w-full max-w-2xl">
         <VideoComponent video={videoCosquin} />
       </div>
 

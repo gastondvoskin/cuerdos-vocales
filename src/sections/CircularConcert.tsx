@@ -9,8 +9,9 @@ import contactParagraphs from "../assets/texts/sections/circularConcert";
 const CircularConcert = () => {
   return (
     <SectionContainer section={SECTIONS.CIRCULAR_CONCERT}>
-      <SectionHeader text="CONCIERTO CIRCULAR EN EL XIRGU" />
-      <ImageComponent src={flyer1} alt="Pintura en acrílico con cantantes sentados en ronda en un pícnic" className="w-56 rounded-full aspect-square my-3 animate-spin z-0 drop-shadow-xl" />
+      <SectionHeader text="CONCIERTO CIRCULAR" />
+      <ImageComponent src={flyer1} alt="Pintura en acrílico con cantantes sentados en ronda en un pícnic"  
+      className="w-8/12 max-w-96 aspect-square rounded-full object-cover animate-spin drop-shadow-xl my-3"/>
       <div className="animate-fadeIn text-center text-xs">
         <p>Lo ancestral y lo nuevo<br />
         se abrazan en armonía,<br />
@@ -29,3 +30,7 @@ const CircularConcert = () => {
 };
 
 export default CircularConcert;
+
+
+// OLD 
+// className="w-56 rounded-full aspect-square my-3 animate-spin z-0 drop-shadow-xl"

@@ -22,7 +22,7 @@ const Videos = () => {
   return (
     <SectionContainer section={SECTIONS.VIDEOS}>
       <SectionHeader text="VIDEOS" />
-      <div className="w-full">
+      <div className="w-full max-w-2xl">
         {videos.slice(0, numberOfVideos).map((video, index) => (
           <VideoComponent video={video} key={index} />
         ))}
