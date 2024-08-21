@@ -1,7 +1,7 @@
 import { IButtonProps } from "../types";
 
-const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, textColor, isDisabled, className }) => {
-  const sharedClassName = `flex items-center gap-2 m-2 px-3 py-2 rounded-3xl shadow-lg bg-${bgColor} text-${textColor} hover:bg-${!isDisabled && textColor} hover:text-${!isDisabled && bgColor}`;
+const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, /* textColor,  */isDisabled }) => {
+  const sharedClassName = `flex items-center text-xs font-bold gap-2 m-2 px-3 py-2 rounded-3xl shadow-lg bg-myWhite-500 hover:bg-myPurple-100`;
 
   if (href) {
     return (
@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, te
     );
   } else {
     return (
-      <button onClick={onClick} className={`${sharedClassName} ${className}`} disabled={isDisabled}>
+      <button onClick={onClick} className={sharedClassName} disabled={isDisabled}>
         {text}
         {Icon && <Icon />}
       </button>
@@ -22,3 +22,5 @@ const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, bgColor, te
 
 export default Button;
 
+// Fix
+// hover:bg-${!isDisabled && textColor} hover:text-${!isDisabled && "myWhite-500"} text-${textColor}
