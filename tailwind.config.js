@@ -48,6 +48,9 @@ export default {
           900: "#333333", 
         },
       }, 
+      fontFamily: {
+        sans: ['Raleway', 'sans-serif'],
+      },
       animation: {
         spin: 'spin 30s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',

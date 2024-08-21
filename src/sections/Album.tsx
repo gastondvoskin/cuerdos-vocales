@@ -5,11 +5,7 @@ import ImageComponent from "../components-reusable/ImageComponent";
 import album from "../assets/images/enterprise/album.webp";
 import Button from "../components-reusable/Button";
 import { FaYoutube, FaSpotify, FaItunesNote } from "react-icons/fa";
-import {
-  SPOTIFY_ALBUM,
-  YOUTUBE_ALBUM,
-  ALBUM_APPLE,
-} from "../constants/socials";
+import { SPOTIFY_ALBUM, YOUTUBE_ALBUM, ALBUM_APPLE } from "../constants/socials";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { SECTIONS } from "../constants/sections";
 
@@ -22,22 +18,19 @@ const Album = () => {
       <Button
         text="Reproducir en Spotify"
         href={SPOTIFY_ALBUM}
-        bgColor="myWhite-500"
         textColor="myOlive-100"
         Icon={FaSpotify}
       />
       <Button
         text="Reproducir en Youtube"
         href={YOUTUBE_ALBUM}
-        bgColor="myWhite-500"
         textColor="red-600"
         Icon={FaYoutube}
       />
       <Button
         text="Reproducir en Apple Music"
         href={ALBUM_APPLE}
-        bgColor="myWhite-500"
-        textColor="myPurple-100"
+        textColor="myPurple-500"
         Icon={FaItunesNote}
       />
     </SectionContainer>

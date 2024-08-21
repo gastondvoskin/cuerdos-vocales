@@ -24,7 +24,7 @@ const Home = () => {
           className="w-64 border-10"
         />
         {/* reference: https://design2tailwind.com/blog/tailwindcss-gradient-text/ */}
-        <div className="text-sm bg-gradient-to-r from-myBrown-900 via-myBrown-100 to-myOrange-900 inline-block text-transparent bg-clip-text text-center">
+        <div className="text-sm drop-shadow bg-gradient-to-r from-myBrown-900 via-myBrown-100 to-myOrange-900 inline-block text-transparent bg-clip-text text-center">
           <p>Grupo vocal de folklore</p>
           <p>Ganador Pre Cosquín</p>
         </div>
