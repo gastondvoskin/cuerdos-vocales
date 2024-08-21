@@ -1,7 +1,7 @@
 import { IButtonProps } from "../types";
 
 const Button: React.FC<IButtonProps> = ({ text, onClick, href, Icon, /* textColor,  */isDisabled }) => {
-  const sharedClassName = `flex items-center gap-2 m-2 px-3 py-2 rounded-3xl shadow-lg bg-myWhite-500 hover:bg-myPurple-100`;
+  const sharedClassName = `flex items-center text-xs font-bold gap-2 m-2 px-3 py-2 rounded-3xl shadow-lg bg-myWhite-500 hover:bg-myPurple-100`;
 
   if (href) {
     return (
