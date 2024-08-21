@@ -27,7 +27,13 @@ const Videos = () => {
           <VideoComponent video={video} key={index} />
         ))}
       </div>
-      <Button text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"} bgColor="myWhite-500" textColor="myPurple-100" isDisabled={isDisabled} onClick={handleViewMore} Icon={MdExpandMore}/>
+      <Button
+        text={isDisabled ? "Todos los videos cargados" : "Cargar más videos"}
+        textColor="myPurple-500"
+        isDisabled={isDisabled}
+        onClick={handleViewMore}
+        Icon={MdExpandMore}
+      />
     </SectionContainer>
   );
 };

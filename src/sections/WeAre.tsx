@@ -25,11 +25,9 @@ const WeAre = () => {
       {renderButton && (
         <Button
           text="Leer más"
-          bgColor="myWhite-500"
           textColor="myPurple-100"
           onClick={handleViewMore}
           Icon={MdExpandMore}
-          className="mb-6"
         />
       )}
       <ImageComponent
