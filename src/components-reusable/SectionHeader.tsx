@@ -2,7 +2,7 @@ import { ISectionHeader } from "../types";
 
 const SectionHeader: React.FC<ISectionHeader> = ({ text }) => {
   return (
-    <header className="self-end pr-4 pt-2 pb-3 mb-4">
+    <header className="self-end pr-4 pt-2 pb-3">
       <h2 className={`text-myPurple-900 text-2xl font-bold drop-shadow-md`}>{text}</h2>
     </header>
   );
