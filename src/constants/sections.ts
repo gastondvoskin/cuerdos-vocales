@@ -15,13 +15,13 @@ export const SECTIONS = {
 
 
 export const TARGETS: ITarget[] = [
-  { id: SECTIONS.HOME, text: "INICIO" },
+  // { id: SECTIONS.HOME, text: "INICIO" },
   { id: SECTIONS.NEWS, text: "NOVEDADES" },
   { id: SECTIONS.VIDEOS, text: "VIDEOS" },
   { id: SECTIONS.WE_ARE, text: "SOMOS" },
   { id: SECTIONS.ALBUM, text: "ÁLBUM" },
   { id: SECTIONS.COSQUIN, text: "COSQUÍN" },
   { id: SECTIONS.CORDURA, text: "CORDURA" },
-  { id: SECTIONS.CIRCULAR_CONCERT, text: "CONCIERTO CIRCULAR" },
-  { id: SECTIONS.CONTACT, text: "REDES Y CONTACTO" },
+  { id: SECTIONS.CIRCULAR_CONCERT, text: "XIRGU" },
+  { id: SECTIONS.CONTACT, text: "CONTACTO" },
 ]; 

@@ -14,7 +14,7 @@ const NavSmall = () => {
   const [currentSection, setCurrentSection] = useState<string>(SECTIONS.HOME);
 
   return (
-    <header>
+    <header className="md:hidden">
       <nav className="fixed w-full h-20 shadow-md z-10">
         <div className="h-full flex justify-between items-center bg-myWhite-100">
           <Link
