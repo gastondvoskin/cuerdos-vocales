@@ -10,8 +10,8 @@ const SectionContainer: React.FC<ISectionContainer> = ({ section, children, /* c
       id={section}
       className={`
         flex flex-col items-center pb-10
-        ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_top,_#f5ddd6,_#e99981)]"}
-        ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_top,_#b4acbe,_#9052ce)]"}       
+        ${orangeBgSections.includes(section) && "bg-[conic-gradient(at_left,_#ffffff,_#f0cdc4)]"}
+        ${purpleBgSections.includes(section) && "bg-[conic-gradient(at_right,_#ffffff,_#e9dcf7)]"}       
         ${section === SECTIONS.CONTACT ? "pt-10" : "pt-16"}
       `}
     >
