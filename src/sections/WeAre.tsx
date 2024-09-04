@@ -8,6 +8,7 @@ import { SECTIONS } from "../constants/sections";
 import { useState } from "react";
 import Button from "../components-reusable/Button";
 import { MdExpandMore } from "react-icons/md";
+import MemberCard from "../components-reusable/MemberCard";
 
 const WeAre = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState<number>(2);
@@ -17,6 +18,12 @@ const WeAre = () => {
     setNumberOfParagraphs(weAreParagraphs.length); 
     setRenderButton(false);
   }; 
+
+  const [viewMember, setViewMember] = useState<null | "dvoskin" | "randazzo | guarrochena | estrach | trosman | flores | gomez | bori | telerman">(null); 
+
+  // const handleViewMember = (member: "dvoskin" | "randazzo | guarrochena | estrach | trosman | flores | gomez | bori | telerman") => {
+
+  // }
 
   return (
     <SectionContainer section={SECTIONS.WE_ARE}>
@@ -30,6 +37,11 @@ const WeAre = () => {
           Icon={MdExpandMore}
         />
       )}
+      <div>
+        <button onClick={() => setViewMember("dvoskin")}>Gastón Dvoskin</button>
+      {/* Gastón Dvoskin (dirección), Alejandro Randazzo (voz y producción), Bernardo Guarrochena (voz y producción), Manuel Estrach (voz), Alejo Trosman (voz), Lucrecia Flores (voz), Aldana Gómez (voz), Paula Bori (voz), Catalina Telerman (voz) */}
+      </div>
+      {viewMember && <MemberCard member="dvoskin"/>}
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"
