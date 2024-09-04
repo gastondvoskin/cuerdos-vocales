@@ -9,7 +9,6 @@ import { useState } from "react";
 import Button from "../components-reusable/Button";
 import { MdExpandMore } from "react-icons/md";
 import MemberCard from "../components-reusable/MemberCard"; 
-import membersSurnames from "../constants/membersSurnames"; 
 
 
 const WeAre = () => {
@@ -47,7 +46,7 @@ const WeAre = () => {
         <button onClick={() => setViewMember("bori")}>Paula Bori</button>
         <button onClick={() => setViewMember("telerman")}>Catalina Telerman</button>
       </div>
-      {viewMember && <MemberCard member={viewMember} />}
+      {viewMember && <MemberCard member={viewMember} setViewMember={setViewMember}/>}
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"

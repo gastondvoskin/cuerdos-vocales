@@ -1,5 +1,4 @@
 import { IconType } from "react-icons";
-import membersSurnames from './constants/membersSurnames';
 
 export interface IParagraphsContainerProps {
   paragraphs: string[];
@@ -81,4 +80,5 @@ export interface IMembers {
 
 export interface IMemberCardProps {
   member: "dvoskin" | "randazzo" | "guarrochena" | "estrach" | "trosman" | "flores" | "gomez" | "bori" | "telerman";
+  setViewMember: (value: null) => void;
 }
