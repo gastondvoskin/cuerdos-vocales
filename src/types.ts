@@ -69,6 +69,7 @@ export interface ISectionLinkProps {
 export interface IMember {
   name: string;
   description: string;
+  imageSrc?: string;
 }
 
 export interface IMembers {
