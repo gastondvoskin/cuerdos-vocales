@@ -9,6 +9,8 @@ import { useState } from "react";
 import Button from "../components-reusable/Button";
 import { MdExpandMore } from "react-icons/md";
 import MemberCard from "../components-reusable/MemberCard"; 
+import members from "../assets/texts/members/members";
+import {IMember} from "../types"
 
 
 const WeAre = () => {
@@ -20,7 +22,7 @@ const WeAre = () => {
     setRenderButton(false);
   }; 
 
-  const [viewMember, setViewMember] = useState<null | "dvoskin" | "randazzo" | "guarrochena" | "estrach" | "trosman" | "flores" | "gomez" | "bori" | "telerman">(null); 
+  const [currentMember, setCurrentMember] = useState<null | IMember>(null); 
 
 
   return (
@@ -36,17 +38,20 @@ const WeAre = () => {
         />
       )}
       <div className="flex flex-col bg-red-500">
-        <button onClick={() => setViewMember("dvoskin")}>Gastón Dvoskin</button>
-        <button onClick={() => setViewMember("randazzo")}>Alejandro Randazzo</button>
-        <button onClick={() => setViewMember("guarrochena")}>Bernardo Guarrochena</button>
-        <button onClick={() => setViewMember("estrach")}>Manuel Estrach</button>
-        <button onClick={() => setViewMember("trosman")}>Alejo Trosman</button>
-        <button onClick={() => setViewMember("flores")}>Lucrecia Flores</button>
-        <button onClick={() => setViewMember("gomez")}>Aldana Gómez</button>
-        <button onClick={() => setViewMember("bori")}>Paula Bori</button>
-        <button onClick={() => setViewMember("telerman")}>Catalina Telerman</button>
+
+        {
+          Object.entries(members).map((member) => {
+            const memberValue = member[1]; 
+            const memberName = memberValue.name; 
+            return (
+              // <p>a</p>
+              <button onClick={() => setCurrentMember(memberValue)}>{memberName}</button>
+            )
+          })
+        }
+
       </div>
-      {viewMember && <MemberCard member={viewMember} setViewMember={setViewMember}/>}
+      {currentMember && <MemberCard member={currentMember} setCurrentMember={setCurrentMember}/>}
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"

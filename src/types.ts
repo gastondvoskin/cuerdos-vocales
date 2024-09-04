@@ -66,19 +66,24 @@ export interface ISectionLinkProps {
 }
 
 
+export interface IMember {
+  name: string;
+  description: string;
+}
+
 export interface IMembers {
-  dvoskin: string;
-  randazzo: string;
-  guarrochena: string;
-  estrach: string;
-  trosman: string;
-  flores: string;
-  gomez: string;
-  bori: string;
-  telerman: string;
+  dvoskin: IMember;
+  randazzo: IMember;
+  guarrochena: IMember;
+  estrach: IMember;
+  trosman: IMember;
+  flores: IMember;
+  gomez: IMember;
+  bori: IMember;
+  telerman: IMember;
 }
 
 export interface IMemberCardProps {
-  member: "dvoskin" | "randazzo" | "guarrochena" | "estrach" | "trosman" | "flores" | "gomez" | "bori" | "telerman";
-  setViewMember: (value: null) => void;
+  member: null | IMember;
+  setCurrentMember: (value: null) => void;
 }
