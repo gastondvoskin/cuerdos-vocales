@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import membersSurnames from './constants/membersSurnames';
 
 export interface IParagraphsContainerProps {
   paragraphs: string[];
@@ -63,4 +64,21 @@ export interface ISectionContainer {
 export interface ISectionLinkProps {
   text: string;
   to: string; 
+}
+
+
+export interface IMembers {
+  dvoskin: string;
+  randazzo: string;
+  guarrochena: string;
+  estrach: string;
+  trosman: string;
+  flores: string;
+  gomez: string;
+  bori: string;
+  telerman: string;
+}
+
+export interface IMemberCardProps {
+  member: "dvoskin" | "randazzo" | "guarrochena" | "estrach" | "trosman" | "flores" | "gomez" | "bori" | "telerman";
 }

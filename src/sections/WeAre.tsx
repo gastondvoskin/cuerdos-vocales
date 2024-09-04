@@ -8,7 +8,9 @@ import { SECTIONS } from "../constants/sections";
 import { useState } from "react";
 import Button from "../components-reusable/Button";
 import { MdExpandMore } from "react-icons/md";
-import MemberCard from "../components-reusable/MemberCard";
+import MemberCard from "../components-reusable/MemberCard"; 
+import membersSurnames from "../constants/membersSurnames"; 
+
 
 const WeAre = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState<number>(2);
@@ -19,11 +21,8 @@ const WeAre = () => {
     setRenderButton(false);
   }; 
 
-  const [viewMember, setViewMember] = useState<null | "dvoskin" | "randazzo | guarrochena | estrach | trosman | flores | gomez | bori | telerman">(null); 
+  const [viewMember, setViewMember] = useState<null | "dvoskin" | "randazzo" | "guarrochena" | "estrach" | "trosman" | "flores" | "gomez" | "bori" | "telerman">(null); 
 
-  // const handleViewMember = (member: "dvoskin" | "randazzo | guarrochena | estrach | trosman | flores | gomez | bori | telerman") => {
-
-  // }
 
   return (
     <SectionContainer section={SECTIONS.WE_ARE}>
@@ -37,11 +36,18 @@ const WeAre = () => {
           Icon={MdExpandMore}
         />
       )}
-      <div>
+      <div className="flex flex-col bg-red-500">
         <button onClick={() => setViewMember("dvoskin")}>Gastón Dvoskin</button>
-      {/* Gastón Dvoskin (dirección), Alejandro Randazzo (voz y producción), Bernardo Guarrochena (voz y producción), Manuel Estrach (voz), Alejo Trosman (voz), Lucrecia Flores (voz), Aldana Gómez (voz), Paula Bori (voz), Catalina Telerman (voz) */}
+        <button onClick={() => setViewMember("randazzo")}>Alejandro Randazzo</button>
+        <button onClick={() => setViewMember("guarrochena")}>Bernardo Guarrochena</button>
+        <button onClick={() => setViewMember("estrach")}>Manuel Estrach</button>
+        <button onClick={() => setViewMember("trosman")}>Alejo Trosman</button>
+        <button onClick={() => setViewMember("flores")}>Lucrecia Flores</button>
+        <button onClick={() => setViewMember("gomez")}>Aldana Gómez</button>
+        <button onClick={() => setViewMember("bori")}>Paula Bori</button>
+        <button onClick={() => setViewMember("telerman")}>Catalina Telerman</button>
       </div>
-      {viewMember && <MemberCard member="dvoskin"/>}
+      {viewMember && <MemberCard member={viewMember} />}
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"
