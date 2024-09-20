@@ -15,11 +15,18 @@ import {IMember} from "../types"
 
 const WeAre = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState<number>(2);
-  const [renderButton, setRenderButton] = useState<boolean>(true);
+  const [renderButton, setRenderButton] = useState<boolean>(true); 
+  const [listMembers, setListMembers] = useState<boolean>(false); 
+  const [renderListMembersButton, setRenderListMembersButton] = useState<boolean>(true); 
 
   const handleViewMore = () => {
     setNumberOfParagraphs(weAreParagraphs.length); 
     setRenderButton(false);
+  }; 
+
+  const handleListMembers = () => {
+    setListMembers(true); 
+    setRenderListMembersButton(false); 
   }; 
 
   const [currentMember, setCurrentMember] = useState<null | IMember>(null); 
@@ -37,20 +44,29 @@ const WeAre = () => {
           Icon={MdExpandMore}
         />
       )}
-      <div className="flex flex-col bg-red-500">
+      {renderListMembersButton && (
+        <Button 
+          text="Ver integrantes"
+          textColor="myPurple-100"
+          onClick={() => handleListMembers()}
+          Icon={MdExpandMore}
+        />
+      )}
 
-        {
-          Object.entries(members).map((member) => {
-            const memberValue = member[1]; 
-            const memberName = memberValue.name; 
-            return (
-              // <p>a</p>
-              <button onClick={() => setCurrentMember(memberValue)}>{memberName}</button>
-            )
-          })
-        }
+      {listMembers && (
+        <div className="flex flex-col bg-blue-500">
+          {
+            Object.entries(members).map((member) => {
+              const memberValue = member[1]; 
+              const memberName = memberValue.name; 
+              return (
+                <button className="bg-green-400" onClick={() => setCurrentMember(memberValue)}>{memberName}</button>
+              )
+            })
+          }
 
-      </div>
+        </div>
+      )}
       {currentMember && <MemberCard member={currentMember} setCurrentMember={setCurrentMember}/>}
       <ImageComponent
         src={circular2}
