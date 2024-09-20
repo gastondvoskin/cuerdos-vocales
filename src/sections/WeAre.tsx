@@ -54,7 +54,7 @@ const WeAre = () => {
       )}
 
       {listMembers && (
-        <div className="grid grid-cols-3 items-center p-6 rounded-lg shadow-md my-10">
+        <div className="grid grid-cols-3 items-center gap-1 p-6 rounded-lg shadow-md my-10">
           {
             Object.entries(members).map((member) => {
               const memberValue = member[1]; 
@@ -73,7 +73,9 @@ const WeAre = () => {
           }
         </div>
       )}
+
       {currentMember && <MemberCard member={currentMember} setCurrentMember={setCurrentMember}/>}
+
       <ImageComponent
         src={circular2}
         alt="Integrantes de Cuerdos Vocales mirando a cámara"
