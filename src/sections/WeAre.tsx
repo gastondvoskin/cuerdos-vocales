@@ -54,17 +54,36 @@ const WeAre = () => {
       )}
 
       {listMembers && (
-        <div className="flex flex-col bg-blue-500">
+        // <div className="flex flex-col bg-blue-500">
+        //   {
+        //     Object.entries(members).map((member) => {
+        //       const memberValue = member[1]; 
+        //       const memberName = memberValue.name; 
+        //       return (
+        //         <button className="bg-green-400" onClick={() => setCurrentMember(memberValue)}>{memberName}</button>
+        //       )
+        //     })
+        //   }
+        // </div>
+
+        <div className="grid grid-cols-3 items-center p-6 rounded-lg shadow-md my-10">
+          {/* <h2 className="text-3xl font-bold text-white mb-4">Meet Our Members</h2> */}
           {
             Object.entries(members).map((member) => {
               const memberValue = member[1]; 
               const memberName = memberValue.name; 
+              const imageSrc = memberValue.imageSrc; 
               return (
-                <button className="bg-green-400" onClick={() => setCurrentMember(memberValue)}>{memberName}</button>
+                <button 
+                  key={memberName}
+                  className="transition duration-300 ease-in-out transform hover:scale-105"
+                  onClick={() => setCurrentMember(memberValue)}
+                >
+                  <img className="w-44 aspect-square object-cover" src={imageSrc} alt={memberName} />
+                </button>
               )
             })
           }
-
         </div>
       )}
       {currentMember && <MemberCard member={currentMember} setCurrentMember={setCurrentMember}/>}
