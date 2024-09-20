@@ -54,7 +54,7 @@ const WeAre = () => {
       )}
 
       {listMembers && (
-        <div className="grid grid-cols-3 items-center gap-1 p-6 rounded-lg shadow-md my-10">
+        <div className="grid grid-cols-3 items-center gap-2 p-2 rounded-lg shadow-md my-10 bg-myWhite-100">
           {
             Object.entries(members).map((member) => {
               const memberValue = member[1]; 
