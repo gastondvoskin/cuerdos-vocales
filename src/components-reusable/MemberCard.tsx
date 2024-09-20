@@ -1,22 +1,19 @@
 import { IMemberCardProps } from "../types"
-// import aldi from "../assets/images/members/aldi.webp"
-// import bori
 
 const MemberCard = ({member, setCurrentMember}: IMemberCardProps) => {
-  if (member) {console.log(member.imageSrc)}
-  // import 
+  // if (member) {console.log(member.imageSrc)}
+
   return (
-    <div className="bg-myOrange-900 w-11/12 max-w-lg">
-      {member && 
-        <div>
-          <h2>{member.name}</h2>
-          <p>{member.description}</p>
-          <img src={member.imageSrc} alt={`Primer plano de ${member.name}`} />
-        </div>
-      }
-      <button onClick={() => setCurrentMember(null)}>Cerrar</button>
-    </div>
+    member && (
+      <div className="absolute flex flex-col text-center items-center  p-6 bg-myWhite-100 w-11/12 max-w-sm shadow-md rounded-md">
+        <h2 className="text-2xl">{member.name}</h2>
+        <img className="w-72 aspect-square object-cover" src={member.imageSrc} alt={`Primer plano de ${member.name}`} />
+        <p className="text-sm">{member.description}</p>
+        <button onClick={() => setCurrentMember(null)}>Cerrar</button>
+      </div>
+    )
   )
+
 }
 
 export default MemberCard
