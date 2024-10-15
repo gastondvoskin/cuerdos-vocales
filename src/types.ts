@@ -64,3 +64,27 @@ export interface ISectionLinkProps {
   text: string;
   to: string; 
 }
+
+
+export interface IMember {
+  name: string;
+  description: string;
+  imageSrc?: string;
+}
+
+export interface IMembers {
+  dvoskin: IMember;
+  randazzo: IMember;
+  guarrochena: IMember;
+  estrach: IMember;
+  trosman: IMember;
+  flores: IMember;
+  gomez: IMember;
+  bori: IMember;
+  telerman: IMember;
+}
+
+export interface IMemberCardProps {
+  member: null | IMember;
+  setCurrentMember: (value: null) => void;
+}

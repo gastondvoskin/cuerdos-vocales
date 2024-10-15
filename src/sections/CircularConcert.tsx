@@ -3,8 +3,8 @@ import ImageComponent from "../components-reusable/ImageComponent";
 import flyer1 from "../assets/images/enterprise/flyer1.webp";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { SECTIONS } from "../constants/sections";
-import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
-import contactParagraphs from "../assets/texts/sections/circularConcert";
+// import ParagraphsContainer from "../components-reusable/ParagraphsContainer";
+// import concertParagraphs from "../assets/texts/sections/circularConcert";
 
 const CircularConcert = () => {
   return (
@@ -22,9 +22,9 @@ const CircularConcert = () => {
         <p>Fecha: <strong>7 de diciembre</strong></p>
         <p>Hora: <strong>20:00hs</strong></p>
         <p>Lugar: <strong>Teatro Xirgu</strong></p>
-        <p>Entradas: <strong>Passline desde el 1 de octubre</strong></p>
+        <p>Entradas a través de: <strong>Passline</strong></p>
       </div>
-      <ParagraphsContainer paragraphs={contactParagraphs} />
+      {/* <ParagraphsContainer paragraphs={concertParagraphs} /> */}
     </SectionContainer>
   );
 };
