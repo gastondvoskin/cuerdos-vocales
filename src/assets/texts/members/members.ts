@@ -11,14 +11,14 @@ import telerman from "./telerman";
 
 const members: IMembers = {
   dvoskin,
+  flores,
   randazzo,
   guarrochena,
-  estrach,
-  trosman,
-  flores,
-  gomez,
+  telerman,
   bori,
-  telerman
+  trosman,
+  gomez,
+  estrach,
 }
 
 export default members; 

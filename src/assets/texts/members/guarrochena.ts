@@ -1,4 +1,4 @@
-import guarrochenaImage from "../../images/members/guarrochenaImage.webp"
+import guarrochenaImage from "../../images/members/guarrochenaImage.jpg"
 
 const guarrochena = {
   name: 'Bernardo Guarrochena',

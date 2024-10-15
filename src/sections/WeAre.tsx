@@ -72,7 +72,6 @@ const WeAre = () => {
           })
         }
       </div>
-      {/* )} */}
 
       {currentMember && <MemberCard member={currentMember} setCurrentMember={setCurrentMember}/>}
 

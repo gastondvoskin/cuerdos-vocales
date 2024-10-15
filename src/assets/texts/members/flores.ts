@@ -1,4 +1,4 @@
-import floresImage from "../../images/members/floresImage.webp"
+import floresImage from "../../images/members/floresImage.jpg"
 
 const flores = {
   name: 'Lucrecia Flores',

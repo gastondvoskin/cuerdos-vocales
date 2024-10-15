@@ -1,4 +1,4 @@
-import trosmanImage from "../../images/members/trosmanImage.webp"
+import trosmanImage from "../../images/members/trosmanImage.jpg"
 
 
 const trosman = {

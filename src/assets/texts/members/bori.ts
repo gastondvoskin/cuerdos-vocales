@@ -1,4 +1,4 @@
-import boriImage from "../../images/members/boriImage.webp"
+import boriImage from "../../images/members/boriImage.jpg"
 
 const bori = 
   {
