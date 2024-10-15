@@ -22,7 +22,7 @@ const CircularConcert = () => {
         <p>Fecha: <strong>7 de diciembre</strong></p>
         <p>Hora: <strong>20:00hs</strong></p>
         <p>Lugar: <strong>Teatro Xirgu</strong></p>
-        <p>Entradas: <strong>Passline desde el 1 de octubre</strong></p>
+        <p>Entradas a través de: <strong>Passline</strong></p>
       </div>
       {/* <ParagraphsContainer paragraphs={concertParagraphs} /> */}
     </SectionContainer>
