@@ -1,5 +1,5 @@
 const weAreParagraphs = [
-  "Cuerdos Vocales es una agrupación musical fundada por Gastón Dvoskin en 2014 con el fin de explorar la fuerza del canto colectivo en el folklore argentino. Ha realizado ciclos de conciertos, peñas y talleres, presentándose junto a artistas de renombre como Juan Quintero, Teresa Parodi y La Charo. ", 
+  "Cuerdos Vocales es la agrupación musical fundada por Gastón Dvoskin en 2014 con el fin de explorar la fuerza del canto colectivo en el folklore argentino. Ha realizado ciclos de conciertos, peñas y talleres, presentándose junto a artistas de renombre como Juan Quintero, Teresa Parodi y La Charo. ", 
 
   "La formación actual cuenta con Gastón Dvoskin (dirección), Alejandro Randazzo (voz y producción), Bernardo Guarrochena (voz y producción), Manuel Estrach (voz), Alejo Trosman (voz), Lucrecia Flores (voz), Aldana Gómez (voz), Paula Bori (voz), Catalina Telerman (voz). ", 
 
