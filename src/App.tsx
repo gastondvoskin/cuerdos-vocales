@@ -10,7 +10,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={
+        <Route path="/xirgu" element={<Xirgu />}/>
+        <Route path="*" element={
           <>
             <NavLarge />
             <NavSmall />
@@ -26,7 +27,6 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/xirgu" element={<Xirgu />}/>
       </Routes>
     </>
   );
