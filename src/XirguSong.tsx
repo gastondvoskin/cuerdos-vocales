@@ -1,0 +1,24 @@
+import { IXirguSongProps } from "./types";
+
+const XirguSong: React.FC<IXirguSongProps> = ({song}) => {
+  return (
+    <div 
+      className={`flex flex-col items-center w-full h-full bg-myWhite-100 text-myGrey-900`} 
+      // style={{ backgroundImage: `url(${song.imageSrc})`}}
+    >
+      <div className="flex flex-col items-center w-full p-3 text-center">
+        <h3 className="font-bold text-2xl text-myPurple-500">{song.name}</h3>
+        <p className="text-lg">{song.composer}</p>
+        <p className="text-sm">Arr: {song.arranger}</p>
+        <p className="text-xs">{song.species}</p>
+      </div>
+      <div>
+        <img src={song.imageSrc} alt="Imagen representativa de la canción" className="w-full h-full object-cover"/>
+      </div>
+    </div>
+  )
+}
+
+export default XirguSong;
+
+
