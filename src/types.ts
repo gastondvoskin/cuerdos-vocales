@@ -88,3 +88,16 @@ export interface IMemberCardProps {
   member: null | IMember;
   setCurrentMember: (value: null) => void;
 }
+
+
+export interface ISong {
+  name: string;
+  composer: string;
+  arranger: string;
+  species: string;
+  imageSrc?: string;
+}
+
+export interface IXirguSongProps {
+  song: ISong;
+}
