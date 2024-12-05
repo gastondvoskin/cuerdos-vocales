@@ -12,7 +12,7 @@ const XirguSong: React.FC<IXirguSongProps> = ({song}) => {
         <p className="text-xs">Arr: {song.arranger}</p>
         <p className="text-xs">{song.species}</p>
       </div>
-      <div>
+      <div className="w-full h-full">
         <img src={song.imageSrc} alt="Imagen representativa de la canción" className="w-full h-full object-cover"/>
       </div>
     </div>

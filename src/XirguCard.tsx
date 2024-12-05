@@ -41,7 +41,7 @@ const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
         // <div>
         //   <img src={cardData.imageSrc} alt="Imagen representativa de la canción" className="w-full h-full object-cover"/>
         // </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center bg-[conic-gradient(at_left,_#0a0a04,_#ffbcab)] w-full h-full justify-center">
           <ImageComponent 
             src={xirguFlyer} 
             alt="Pintura en acrílico con cantantes sentados en ronda en un pícnic"  
