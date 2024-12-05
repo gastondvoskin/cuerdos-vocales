@@ -101,3 +101,14 @@ export interface ISong {
 export interface IXirguSongProps {
   song: ISong;
 }
+
+
+export interface IXirguCard {
+  title: string;
+  text: string;
+  imageSrc?: string;
+}
+
+export interface IXirguCardProps {
+  cardData: IXirguCard;
+}
