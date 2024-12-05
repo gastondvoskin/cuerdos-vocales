@@ -1,10 +1,12 @@
 import XirguSong from "./XirguSong"; 
 import songs from "./constants/xirguSongs";
-import SectionContainer from "./components-reusable/SectionContainer";
+// import SectionContainer from "./components-reusable/SectionContainer";
 
 import XirguCard from "./XirguCard";
-import andando from "./assets/images/songImages/andando.webp";
-
+import andando from "./assets/images/songImages/andando.webp"; 
+// import ImageComponent from "./components-reusable/ImageComponent";
+// import logo from "./assets/images/enterprise/logo.webp"; 
+// import logoVertical from "./assets/images/enterprise/logo-vertical.webp";
 
 // https://codesandbox.io/p/devbox/swiper-react-effect-cards-sw6ctl?file=%2Fsrc%2FApp.jsx%3A2%2C1-8%2C1
 
@@ -23,21 +25,25 @@ const Xirgu: React.FC = () => {
     title: "¡Gracias por compartir este encuentro! ❤️",  
     text: "Arrastrá las tarjetitas para recorrer las canciones del concierto", 
     imageSrc: andando, 
+    firstCard: true, 
   }
 
+
+
   const thanks = {
-    title: "Gracias, gracias, gracias ❤️",  
+    // title: "Gracias, gracias, gracias ❤️",  
+    title: "",  
     text: "", 
     members: [
-      {name: "Gastón Dvoskin", role: "Dirección y cajón"},
-      {name: "Ale Randazzo", role: "Voz, guitarra y producción"},
-      {name: "Ber Guarrochena", role: "Voz y producción"},
+      {name: "Pau Bori", role: "Voz"},
       {name: "Manu Estrach", role: "Voz"},
-      {name: "Ale Trosman", role: "Voz"},
       {name: "Lucre Flores", role: "Voz y bombo"},
       {name: "Aldi Gómez", role: "Voz"},
-      {name: "Pau Bori", role: "Voz"},
+      {name: "Ber Guarrochena", role: "Voz y producción"},
+      {name: "Ale Randazzo", role: "Voz, guitarra y producción"},
       {name: "Cata Terlerman", role: "Voz y caja"},
+      {name: "Ale Trosman", role: "Voz"},
+      {name: "Gastón Dvoskin", role: "Dirección y cajón"},
     ], 
     guests: [
       {name: "Teresa Parodi", role: "Voz"},
@@ -45,15 +51,28 @@ const Xirgu: React.FC = () => {
     ], 
     others: [
       {name: "Teatro Margarita Xirgu", role: ""}, 
-      {name: "Maru", role: "Producción"}, 
-      {name: "José", role: "Sonido"},
+      {name: "Maru Pereira", role: "Producción"}, 
+      {name: "José Mercado", role: "Sonido"},
     ], 
     imageSrc: andando, 
   }
 
   return (
-    <SectionContainer section="home">
-      <h1 className="text-3xl font-bold mb-8 text-center text-myPurple-900">Cuerdos Circular</h1>
+    <main className="flex flex-col text-center w-screen h-screen items-center pt-10 bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
+      {/* create a smooth bg color using myOrange */}
+      
+      
+      {/* <h1 className="text-3xl font-bold mb-8 text-center text-myOrange-500">Cuerdos Circular</h1> */}
+
+      {/* <div className="h-full flex justify-between items-center">
+        <ImageComponent src={logo} alt="logo" className="h-16" />
+        <ImageComponent
+          src={logoVertical}
+          alt="Logo Vertical"
+          className="h-11"
+        />
+      </div> */}
+
 
       <Swiper
         effect={'cards'}
@@ -80,7 +99,7 @@ const Xirgu: React.FC = () => {
 
       {/* <p className="mt-1">Acerca de Cuerdos Vocales:</p>  */}
       <a href="https://www.cuerdosvocales.com" className="text-blue-500 underline">cuerdosvocales.com</a>
-    </SectionContainer>
+    </main>
   );
 };
 

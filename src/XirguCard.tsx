@@ -1,12 +1,15 @@
 import { IXirguCardProps } from "./types";
+import ImageComponent from "./components-reusable/ImageComponent";
+// import flyer1 from "./assets/images/enterprise/flyer1.webp";
+import xirguFlyer from "./assets/images/enterprise/xirguFlyer.jpg";
 
 const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
   return (
     <div className={`flex flex-col items-center w-full h-full bg-myWhite-100 text-myGrey-900`}>
       
       <div className="flex flex-col items-center w-full p-3 text-center">
-        <h3 className="font-bold text-xl text-myPurple-500">{cardData.title}</h3>
-        <p className="text-md">{cardData.text}</p>
+        <h3 className="font-bold text-lg text-myOrange-500">{cardData.title}</h3>
+        <p className="text-sm">{cardData.text}</p>
       </div>
 
       {cardData.members && (
@@ -35,10 +38,24 @@ const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
       )}
 
       {!cardData.members && (
-        <div>
-          <img src={cardData.imageSrc} alt="Imagen representativa de la canción" className="w-full h-full object-cover"/>
+        // <div>
+        //   <img src={cardData.imageSrc} alt="Imagen representativa de la canción" className="w-full h-full object-cover"/>
+        // </div>
+        <div className="flex flex-col items-center">
+          <ImageComponent 
+            src={xirguFlyer} 
+            alt="Pintura en acrílico con cantantes sentados en ronda en un pícnic"  
+            className="w-11/12 aspect-square rounded-full object-cover animate-spin drop-shadow-xl my-3"/>
+          {/* <div className="animate-fadeIn text-center text-xs">
+            <p>Lo ancestral y lo nuevo<br />
+            se abrazan en armonía,<br />
+            y en circular encuentro,<br />
+            la música cobra vida.</p>
+          </div> */}
         </div>
       )}
+
+
     </div>
   )
 }

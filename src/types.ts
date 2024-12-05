@@ -115,6 +115,7 @@ export interface IXirguCard {
   guests?: IPersonXirgu[];
   others?: IPersonXirgu[];
   imageSrc?: string;
+  firstCard?: boolean;
 }
 
 export interface IXirguCardProps {
