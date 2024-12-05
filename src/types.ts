@@ -103,9 +103,17 @@ export interface IXirguSongProps {
 }
 
 
+export interface IPersonXirgu {
+  name: string;
+  role: string; 
+}
+
 export interface IXirguCard {
   title: string;
   text: string;
+  members?: IPersonXirgu[];
+  guests?: IPersonXirgu[];
+  others?: IPersonXirgu[];
   imageSrc?: string;
 }
 

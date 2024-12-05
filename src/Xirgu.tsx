@@ -20,8 +20,34 @@ import { EffectCards } from 'swiper/modules';
 const Xirgu: React.FC = () => {
 
   const explanation = {
-    title: "Gracias por compartir este encuentro! ❤️",  
+    title: "¡Gracias por compartir este encuentro! ❤️",  
     text: "Arrastrá las tarjetitas para recorrer las canciones del concierto", 
+    imageSrc: andando, 
+  }
+
+  const thanks = {
+    title: "Gracias, gracias, gracias ❤️",  
+    text: "", 
+    members: [
+      {name: "Gastón dvoskin", role: "Dirección y cajón"},
+      {name: "Alejandro Randazzo", role: "Voz, guitarra y producción"},
+      {name: "Bernardo Guarrochena", role: "Voz y producción"},
+      {name: "Manuel Estrach", role: "Voz"},
+      {name: "Alejo Trosman", role: "Voz"},
+      {name: "Lucrecia Flores", role: "Voz y bombo"},
+      {name: "Aldana Gómez", role: "Voz"},
+      {name: "Paula Bori", role: "Voz"},
+      {name: "Catalina Terlerman", role: "Voz y caja"},
+    ], 
+    guests: [
+      {name: "Teresa Parodi", role: "Voz"},
+      {name: "Manuel Estrach", role: "Percusión"},
+    ], 
+    others: [
+      {name: "Teatro Margarita Xirgu", role: ""}, 
+      {name: "Producción", role: "Maru"}, 
+      {name: "José", role: "Sonido"},
+    ], 
     imageSrc: andando, 
   }
 
@@ -35,19 +61,24 @@ const Xirgu: React.FC = () => {
         modules={[EffectCards]}
         className="w-7/12 h-7/12 md:w-3/12 md:h-3/12"
       >
+
         <SwiperSlide className="flex items-center justify-center rounded-md">
           <XirguCard cardData={explanation} />
         </SwiperSlide>
+
         {songs.map((song, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center rounded-md">
             <XirguSong song={song} />
           </SwiperSlide>
         ))}
 
+        <SwiperSlide className="flex items-center justify-center rounded-md">
+          <XirguCard cardData={thanks} />
+        </SwiperSlide>
+
       </Swiper>
 
-      <p>¡Gracias por acompañarnos! ❤️</p>
-      <p className="mt-4">Acerca de Cuerdos Vocales:</p> 
+      {/* <p className="mt-1">Acerca de Cuerdos Vocales:</p>  */}
       <a href="https://www.cuerdosvocales.com" className="text-blue-500 underline">cuerdosvocales.com</a>
     </SectionContainer>
   );
