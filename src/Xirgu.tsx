@@ -10,10 +10,7 @@ import andando from "./assets/images/songImages/andando.webp";
 
 // https://codesandbox.io/p/devbox/swiper-react-effect-cards-sw6ctl?file=%2Fsrc%2FApp.jsx%3A2%2C1-8%2C1
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
@@ -59,7 +56,6 @@ const Xirgu: React.FC = () => {
 
   return (
     <main className="flex flex-col text-center w-screen h-screen items-center pt-10 bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
-      {/* create a smooth bg color using myOrange */}
       
       
       {/* <h1 className="text-3xl font-bold mb-8 text-center text-myOrange-500">Cuerdos Circular</h1> */}
@@ -97,8 +93,14 @@ const Xirgu: React.FC = () => {
 
       </Swiper>
 
-      {/* <p className="mt-1">Acerca de Cuerdos Vocales:</p>  */}
-      <a href="https://www.cuerdosvocales.com" className="text-blue-500 underline">cuerdosvocales.com</a>
+      <a 
+        href="https://www.cuerdosvocales.com" 
+        className="text-blue-500 underline hover:text-blue-700 transition-colors duration-300"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        cuerdosvocales.com
+      </a>
     </main>
   );
 };
