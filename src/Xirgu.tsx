@@ -52,13 +52,13 @@ const Xirgu: React.FC = () => {
   }
 
   return (
-    <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center justify-center">
+    <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center pt-12">
       {/* <div className="bg-yellow-500 h-80 w-11"></div> */}
       <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="w-60 h-[280]"
+        className="w-56 h-[240]"
       >
         <SwiperSlide className="rounded-lg">
           <XirguCard cardData={explanation} />
