@@ -30,7 +30,3 @@ const CircularConcert = () => {
 };
 
 export default CircularConcert;
-
-
-// OLD 
-// className="w-56 rounded-full aspect-square my-3 animate-spin z-0 drop-shadow-xl"

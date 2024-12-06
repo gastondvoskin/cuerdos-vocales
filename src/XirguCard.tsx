@@ -1,6 +1,5 @@
 import { IXirguCardProps } from "./types";
 import ImageComponent from "./components-reusable/ImageComponent";
-// import flyer1 from "./assets/images/enterprise/flyer1.webp";
 import xirguFlyer from "./assets/images/enterprise/xirguFlyer.jpg";
 
 const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
