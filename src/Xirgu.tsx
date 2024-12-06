@@ -1,9 +1,7 @@
 import XirguSong from "./XirguSong"; 
 import songs from "./constants/xirguSongs";
-// import SectionContainer from "./components-reusable/SectionContainer";
-
+import andando from "./assets/images/songImages/andando.webp";
 import XirguCard from "./XirguCard";
-import andando from "./assets/images/songImages/andando.webp"; 
 // import ImageComponent from "./components-reusable/ImageComponent";
 // import logo from "./assets/images/enterprise/logo.webp"; 
 // import logoVertical from "./assets/images/enterprise/logo-vertical.webp";
@@ -28,7 +26,6 @@ const Xirgu: React.FC = () => {
 
 
   const thanks = {
-    // title: "Gracias, gracias, gracias ❤️",  
     title: "",  
     text: "", 
     members: [
@@ -55,52 +52,43 @@ const Xirgu: React.FC = () => {
   }
 
   return (
-    <main className="flex flex-col text-center w-screen h-screen items-center pt-10 bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
-      
-      
-      {/* <h1 className="text-3xl font-bold mb-8 text-center text-myOrange-500">Cuerdos Circular</h1> */}
-
-      {/* <div className="h-full flex justify-between items-center">
-        <ImageComponent src={logo} alt="logo" className="h-16" />
-        <ImageComponent
-          src={logoVertical}
-          alt="Logo Vertical"
-          className="h-11"
-        />
-      </div> */}
-
-
+    <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center justify-center">
+      {/* <div className="bg-yellow-500 h-80 w-11"></div> */}
       <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="w-7/12 h-7/12 md:w-3/12 md:h-3/12"
+        className="w-60 h-[280]"
       >
-
-        <SwiperSlide className="flex items-center justify-center rounded-md">
+        <SwiperSlide className="rounded-lg">
           <XirguCard cardData={explanation} />
         </SwiperSlide>
-
         {songs.map((song, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center rounded-md">
+          <SwiperSlide key={index} className="rounded-lg">
             <XirguSong song={song} />
           </SwiperSlide>
         ))}
-
-        <SwiperSlide className="flex items-center justify-center rounded-md">
+        <SwiperSlide className="rounded-lg">
           <XirguCard cardData={thanks} />
         </SwiperSlide>
-
       </Swiper>
-
       <a 
         href="https://www.cuerdosvocales.com" 
-        className="text-blue-500 underline hover:text-blue-700 transition-colors duration-300"
+        className="text-blue-500 text-sm mt-2 underline hover:text-blue-700 transition-colors duration-300"
         target="_blank" 
         rel="noopener noreferrer"
       >
         cuerdosvocales.com
       </a>
+
+              {/* <div className="h-full flex justify-between items-center">
+          <ImageComponent src={logo} alt="logo" className="h-16" />
+          <ImageComponent
+            src={logoVertical}
+            alt="Logo Vertical"
+            className="h-11"
+          />
+        </div> */}
     </main>
   );
 };
