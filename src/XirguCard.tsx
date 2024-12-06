@@ -1,6 +1,5 @@
 import { IXirguCardProps } from "./types";
 import ImageComponent from "./components-reusable/ImageComponent";
-// import flyer1 from "./assets/images/enterprise/flyer1.webp";
 import xirguFlyer from "./assets/images/enterprise/xirguFlyer.jpg";
 
 const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
@@ -14,22 +13,22 @@ const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
 
       {cardData.members && (
         <div className="flex flex-col gap-2 text-center text-xs">
-          <div >
-            <h4 className="text-lg">Cuerdos Vocales: </h4>
+          <div>
+            <h4 className="text-lg">Cuerdos Vocales</h4>
             <ul >
               {cardData.members?.map(member => <li>{`${member.name} - ${member.role}`}</li>)}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg">Nos acompañan: </h4>
+            <h4 className="text-lg">Invitades</h4>
             <ul>
               {cardData.guests?.map(member => <li>{`${member.name} - ${member.role}`}</li>)}
             </ul>
           </div>
 
           <div className="mb-6">
-            <h4 className="text-lg">Técnica: </h4>
+            <h4 className="text-lg">Técnica</h4>
             <ul>
               {cardData.others?.map(member => <li>{`${member.name} - ${member.role}`}</li>)}
             </ul>

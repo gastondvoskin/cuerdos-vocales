@@ -1,19 +1,14 @@
 import XirguSong from "./XirguSong"; 
 import songs from "./constants/xirguSongs";
-// import SectionContainer from "./components-reusable/SectionContainer";
-
+import andando from "./assets/images/songImages/andando.webp";
 import XirguCard from "./XirguCard";
-import andando from "./assets/images/songImages/andando.webp"; 
 // import ImageComponent from "./components-reusable/ImageComponent";
 // import logo from "./assets/images/enterprise/logo.webp"; 
 // import logoVertical from "./assets/images/enterprise/logo-vertical.webp";
 
 // https://codesandbox.io/p/devbox/swiper-react-effect-cards-sw6ctl?file=%2Fsrc%2FApp.jsx%3A2%2C1-8%2C1
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
@@ -31,7 +26,6 @@ const Xirgu: React.FC = () => {
 
 
   const thanks = {
-    // title: "Gracias, gracias, gracias ❤️",  
     title: "",  
     text: "", 
     members: [
@@ -58,105 +52,45 @@ const Xirgu: React.FC = () => {
   }
 
   return (
-    <main className="flex flex-col text-center w-screen h-screen items-center pt-10 bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
-      {/* create a smooth bg color using myOrange */}
-      
-      
-      {/* <h1 className="text-3xl font-bold mb-8 text-center text-myOrange-500">Cuerdos Circular</h1> */}
-
-      {/* <div className="h-full flex justify-between items-center">
-        <ImageComponent src={logo} alt="logo" className="h-16" />
-        <ImageComponent
-          src={logoVertical}
-          alt="Logo Vertical"
-          className="h-11"
-        />
-      </div> */}
-
-
+    <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center pt-12">
+      {/* <div className="bg-yellow-500 h-80 w-11"></div> */}
       <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="w-7/12 h-7/12 md:w-3/12 md:h-3/12"
+        className="w-56 h-[240]"
       >
-
-        <SwiperSlide className="flex items-center justify-center rounded-md">
+        <SwiperSlide className="rounded-lg">
           <XirguCard cardData={explanation} />
         </SwiperSlide>
-
         {songs.map((song, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center rounded-md">
+          <SwiperSlide key={index} className="rounded-lg">
             <XirguSong song={song} />
           </SwiperSlide>
         ))}
-
-        <SwiperSlide className="flex items-center justify-center rounded-md">
+        <SwiperSlide className="rounded-lg">
           <XirguCard cardData={thanks} />
         </SwiperSlide>
-
       </Swiper>
+      <a 
+        href="https://www.cuerdosvocales.com" 
+        className="text-blue-500 text-sm mt-2 underline hover:text-blue-700 transition-colors duration-300"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        cuerdosvocales.com
+      </a>
 
-      {/* <p className="mt-1">Acerca de Cuerdos Vocales:</p>  */}
-      <a href="https://www.cuerdosvocales.com" className="text-blue-500 underline">cuerdosvocales.com</a>
+              {/* <div className="h-full flex justify-between items-center">
+          <ImageComponent src={logo} alt="logo" className="h-16" />
+          <ImageComponent
+            src={logoVertical}
+            alt="Logo Vertical"
+            className="h-11"
+          />
+        </div> */}
     </main>
   );
 };
 
 export default Xirgu;
-
-
-// .swiper {
-//   width: 240px;
-//   height: 320px;
-// }
-
-// .swiper-slide {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 18px;
-//   font-size: 22px;
-//   font-weight: bold;
-//   color: #fff;
-// }
-
-// .swiper-slide:nth-child(1n) {
-//   background-color: rgb(206, 17, 17);
-// }
-
-// .swiper-slide:nth-child(2n) {
-//   background-color: rgb(0, 140, 255);
-// }
-
-// .swiper-slide:nth-child(3n) {
-//   background-color: rgb(10, 184, 111);
-// }
-
-// .swiper-slide:nth-child(4n) {
-//   background-color: rgb(211, 122, 7);
-// }
-
-// .swiper-slide:nth-child(5n) {
-//   background-color: rgb(118, 163, 12);
-// }
-
-// .swiper-slide:nth-child(6n) {
-//   background-color: rgb(180, 10, 47);
-// }
-
-// .swiper-slide:nth-child(7n) {
-//   background-color: rgb(35, 99, 19);
-// }
-
-// .swiper-slide:nth-child(8n) {
-//   background-color: rgb(0, 68, 255);
-// }
-
-// .swiper-slide:nth-child(9n) {
-//   background-color: rgb(218, 12, 218);
-// }
-
-// .swiper-slide:nth-child(10n) {
-//   background-color: rgb(54, 94, 77);
-// }
