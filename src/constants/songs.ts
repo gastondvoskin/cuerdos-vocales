@@ -23,9 +23,9 @@ import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
 const songs: ISong[] = [
   {
     name: "Lavanderas (fragmento)",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "XXXX",
     imageSrc: cancionDeCuna,
   },
   {
@@ -44,9 +44,9 @@ const songs: ISong[] = [
   },
   {
     name: "El caramba",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "Caramba",
     imageSrc: cancionDeCuna,
   },
   {
@@ -58,16 +58,16 @@ const songs: ISong[] = [
   },
   {
     name: "Gohle (fragmento)",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "XXXX",
     imageSrc: cancionDeCuna,
   },
   {
     name: "Zaspalo mome",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "Anónimo",
+    arranger: "Cuerdos Vocales",
+    species: "Popular búlgara",
     imageSrc: cancionDeCuna,
   },
   {
@@ -78,10 +78,10 @@ const songs: ISong[] = [
     imageSrc: andando,
   },
   {
-    name: "Pasionarias",
-    composer: "",
-    arranger: "",
-    species: "",
+    name: "He sembrado una pasión y El gavilán",
+    composer: "Anónimo - Violeta Parra",
+    arranger: "Catalina Telerman",
+    species: "Vidala",
     imageSrc: cancionDeCuna,
   },
   {
@@ -93,9 +93,9 @@ const songs: ISong[] = [
   },
   {
     name: "Los tres deseos de siempre",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "XXXX",
     imageSrc: cancionDeCuna,
   },
   {
@@ -106,11 +106,11 @@ const songs: ISong[] = [
     imageSrc: cancionDeCuna,
   },
   {
-    name: "Pájaros de barro",
-    composer: "",
-    arranger: "",
-    species: "",
-    imageSrc: seguidillas,
+    name: "Pájaros de barro (fragmento)",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "XXXX",
+    imageSrc: cancionDeCuna,
   },
   {
     name: "Seguidillas del laurel",
@@ -135,9 +135,9 @@ const songs: ISong[] = [
   },
   {
     name: "Conselho",
-    composer: "",
-    arranger: "",
-    species: "",
+    composer: "XXXX",
+    arranger: "XXXX",
+    species: "XXXX",
     imageSrc: cancionDeCuna,
   },
   {
@@ -151,8 +151,8 @@ const songs: ISong[] = [
 
 
   // {
-  //   name: "",
-  //   composer: "",
+  //   name: "XXXX",
+  //   composer: "XXXX",
   //   arranger: "",
   //   species: "",
   //   imageSrc: cancionDeCuna,
