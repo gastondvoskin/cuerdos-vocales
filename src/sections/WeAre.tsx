@@ -16,18 +16,11 @@ import {IMember} from "../types"
 const WeAre = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState<number>(2);
   const [renderButton, setRenderButton] = useState<boolean>(true); 
-  // const [listMembers, setListMembers] = useState<boolean>(false); 
-  // const [renderListMembersButton, setRenderListMembersButton] = useState<boolean>(true); 
 
   const handleViewMore = () => {
     setNumberOfParagraphs(weAreParagraphs.length); 
     setRenderButton(false);
   }; 
-
-  // const handleListMembers = () => {
-  //   setListMembers(true); 
-  //   setRenderListMembersButton(false); 
-  // }; 
 
   const [currentMember, setCurrentMember] = useState<null | IMember>(null); 
 
@@ -44,16 +37,7 @@ const WeAre = () => {
           Icon={MdExpandMore}
         />
       )}
-      {/* {renderListMembersButton && (
-        <Button 
-          text="Ver integrantes"
-          textColor="myPurple-100"
-          onClick={() => handleListMembers()}
-          Icon={MdExpandMore}
-        />
-      )} */}
 
-      {/* {listMembers && ( */}
       <div className="grid grid-cols-2 items-center gap-2 p-2 rounded-lg shadow-md my-10 bg-myWhite-100">
         {
           Object.entries(members).map((member) => {
