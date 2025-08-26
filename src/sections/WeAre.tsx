@@ -16,18 +16,11 @@ import {IMember} from "../types"
 const WeAre = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState<number>(2);
   const [renderButton, setRenderButton] = useState<boolean>(true); 
-  // const [listMembers, setListMembers] = useState<boolean>(false); 
-  // const [renderListMembersButton, setRenderListMembersButton] = useState<boolean>(true); 
 
   const handleViewMore = () => {
     setNumberOfParagraphs(weAreParagraphs.length); 
     setRenderButton(false);
   }; 
-
-  // const handleListMembers = () => {
-  //   setListMembers(true); 
-  //   setRenderListMembersButton(false); 
-  // }; 
 
   const [currentMember, setCurrentMember] = useState<null | IMember>(null); 
 
@@ -44,17 +37,8 @@ const WeAre = () => {
           Icon={MdExpandMore}
         />
       )}
-      {/* {renderListMembersButton && (
-        <Button 
-          text="Ver integrantes"
-          textColor="myPurple-100"
-          onClick={() => handleListMembers()}
-          Icon={MdExpandMore}
-        />
-      )} */}
 
-      {/* {listMembers && ( */}
-      <div className="grid grid-cols-3 items-center gap-2 p-2 rounded-lg shadow-md my-10 bg-myWhite-100">
+      <div className="grid grid-cols-2 items-center gap-2 p-2 rounded-lg shadow-md my-10 bg-myWhite-100">
         {
           Object.entries(members).map((member) => {
             const memberValue = member[1]; 
@@ -63,7 +47,7 @@ const WeAre = () => {
             return (
               <button 
                 key={memberName}
-                className="hover:scale-105 transition duration-300 ease-in-out transform"
+                className="hover:scale-105 transition duration-300 ease-in-out transform p-"
                 onClick={() => setCurrentMember(memberValue)}
               >
                 <img className="w-44 aspect-square object-cover" src={imageSrc} alt={memberName} />
