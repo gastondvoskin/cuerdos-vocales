@@ -98,26 +98,6 @@ export interface ISong {
   imageSrc?: string;
 }
 
-export interface IXirguSongProps {
+export interface ISongProps {
   song: ISong;
-}
-
-
-export interface IPersonXirgu {
-  name: string;
-  role: string; 
-}
-
-export interface IXirguCard {
-  title: string;
-  text: string;
-  members?: IPersonXirgu[];
-  guests?: IPersonXirgu[];
-  others?: IPersonXirgu[];
-  imageSrc?: string;
-  firstCard?: boolean;
-}
-
-export interface IXirguCardProps {
-  cardData: IXirguCard;
 }
