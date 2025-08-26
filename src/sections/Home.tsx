@@ -5,7 +5,6 @@ import album from "../assets/images/enterprise/album.webp";
 import SectionContainer from "../components-reusable/SectionContainer";
 import { Link } from "react-scroll";
 import { SECTIONS } from "../constants/sections";
-// import styles from "./Home.module.css";
 
 const Home = () => {
   return (
