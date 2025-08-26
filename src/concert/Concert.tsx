@@ -1,40 +1,16 @@
-import SongCard from "@/concert/SongCard";
 import WelcomeCard from "@/concert/WelcomeCard";
+import SongCard from "@/concert/SongCard";
 import CreditsCard from "@/concert/CreditsCard";
 
 import songs from "@/constants/xirguSongs";
-import andando from "@/assets/images/songImages/andando.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
+
 const Concert: React.FC = () => {
-
-  const thanks = {
-    title: "",
-    text: "",
-    members: [
-      { name: "Aldi Gómez", role: "Voz, clarinete, wasá" },
-      { name: "Ale Randazzo", role: "Voz, guitarra, producción" },
-      { name: "Ale Trosman", role: "Voz, pandero" },
-      { name: "Ber Guarrochena", role: "Voz, producción" },
-      { name: "Cata Terlerman", role: "Voz, pandero" },
-      { name: "Gastón Dvoskin", role: "Percusión, dirección" },
-      { name: "Lucre Flores", role: "Voz, bombo" },
-      { name: "Manu Tirso", role: "Percusión, producción" },
-      { name: "Max Lukac", role: "Voz, zapateo" },
-      { name: "Pau Bori", role: "Voz, shakers" },
-    ],
-    guests: [{ name: "Abril Lukac", role: "Danza" }],
-    others: [
-      { name: "Cultural Thames", role: "Centro cultural" },
-      { name: "José Mercado", role: "Sonido" },
-    ],
-    imageSrc: andando,
-  };
-
   return (
     <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center pt-12">
       <Swiper
@@ -54,7 +30,7 @@ const Concert: React.FC = () => {
         ))}
 
         <SwiperSlide className="rounded-lg">
-          <CreditsCard cardData={thanks} />
+          <CreditsCard />
         </SwiperSlide>
       </Swiper>
       <a
