@@ -26,6 +26,6 @@ export const TARGETS: ITarget[] = [
   { id: SECTIONS.ALBUM, text: "ÁLBUM", icon: FaCompactDisc },
   { id: SECTIONS.COSQUIN, text: "COSQUÍN", icon: GiPoncho },
   { id: SECTIONS.CORDURA, text: "CORDURA", icon: FaGuitar },
-  { id: SECTIONS.CIRCULAR_CONCERT, text: "XIRGU", icon: FaCircle },
+  { id: SECTIONS.CIRCULAR_CONCERT, text: "CIRCULAR", icon: FaCircle },
   { id: SECTIONS.CONTACT, text: "CONTACTO", icon: FaEnvelope },
 ]; 
