@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/concierto" element={<Concert />} />
+        <Route path="/thames" element={<Concert />} />
         <Route
           path="/"
           element={
