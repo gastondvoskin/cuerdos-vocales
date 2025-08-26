@@ -9,15 +9,14 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
-
 const Concert: React.FC = () => {
   return (
-    <main className="h-dvh w-screen items-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] flex flex-col text-center pt-12">
+    <main className="h-dvh w-dvw flex flex-col items-center justify-center text-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
       <Swiper
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="w-56 h-[240]"
+        className="w-64 h-[500px]"
       >
         <SwiperSlide className="rounded-lg">
           <WelcomeCard />

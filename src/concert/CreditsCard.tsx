@@ -16,40 +16,38 @@ const CreditsCard: React.FC = () => {
 
   const otherCredits = [
     { name: "Cultural Thames", role: "Centro cultural" },
-    { name: "José Mercado", role: "Sonido" },
+    { name: "Juan Galimberti y José Mercado", role: "Sonido" },
   ];
 
   return (
     <div
-      className={`flex flex-col items-center w-full h-full bg-myWhite-100 text-myGrey-900`}
+      className={`flex flex-col items-center w-full h-full bg-myWhite-100 text-myGrey-900 justify-center gap-2 text-center text-xs`}
     >
-      <div className="flex flex-col gap-2 text-center text-xs">
-        <div>
-          <h4 className="text-lg">Cuerdos Vocales</h4>
-          <ul>
-            {members.map((member) => (
-              <li>{`${member.name} - ${member.role}`}</li>
-            ))}
-          </ul>
-        </div>
+      <div>
+        <h4 className="text-xl">Cuerdos Vocales</h4>
+        <ul>
+          {members.map((member) => (
+            <li>{`${member.name} - ${member.role}`}</li>
+          ))}
+        </ul>
+      </div>
 
-        <div>
-          <h4 className="text-lg">Invitada</h4>
-          <ul>
-            {guests.map((guest) => (
-              <li>{`${guest.name} - ${guest.role}`}</li>
-            ))}
-          </ul>
-        </div>
+      <div>
+        <h4 className="text-lg">Invitada</h4>
+        <ul>
+          {guests.map((guest) => (
+            <li>{`${guest.name} - ${guest.role}`}</li>
+          ))}
+        </ul>
+      </div>
 
-        <div className="mb-6">
-          <h4 className="text-lg">Técnica</h4>
-          <ul>
-            {otherCredits.map((credit) => (
-              <li>{`${credit.name} - ${credit.role}`}</li>
-            ))}
-          </ul>
-        </div>
+      <div className="mb-6">
+        <h4 className="text-lg">Técnica</h4>
+        <ul>
+          {otherCredits.map((credit) => (
+            <li>{`${credit.name} - ${credit.role}`}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
