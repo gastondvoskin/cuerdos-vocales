@@ -1,5 +1,5 @@
 import ImageComponent from "@/components-reusable/ImageComponent";
-import xirguFlyer from "@/assets/images/enterprise/xirguFlyer.jpg";
+import flyerThames from "@/assets/images/enterprise/flyerThames.jpeg";
 
 const WelcomeCard: React.FC = () => {
   return (
@@ -14,9 +14,9 @@ const WelcomeCard: React.FC = () => {
           "Arrastrá las tarjetitas para recorrer las canciones del concierto"
         </p>
       </div>
-      <div className="flex flex-col items-center bg-[conic-gradient(at_left,_#0a0a04,_#ffbcab)] w-full h-full justify-center">
+      <div className="flex flex-col items-center w-full h-full justify-center bg-[conic-gradient(at_left,_#eee,_#a8b)] ">
         <ImageComponent
-          src={xirguFlyer}
+          src={flyerThames}
           alt="Cuerdos Vocales en círculo"
           className="w-11/12 aspect-square rounded-full object-cover animate-spin drop-shadow-xl my-3"
         />
