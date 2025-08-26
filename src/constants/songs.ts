@@ -1,21 +1,21 @@
-import { ISong } from "../types";
+import { ISong } from "@/types";
 
-import andando from "../assets/images/songImages/andando.webp";
-import cancionDeCuna from "../assets/images/songImages/cancionDeCuna.webp";
-import chacarera from "../assets/images/songImages/chacarera.webp";
-import charrada from "../assets/images/songImages/charrada.webp";
-import charros from "../assets/images/songImages/charros.webp";
-import coplasAlAgua from "../assets/images/songImages/coplasAlAgua.webp";
-import laMarea from "../assets/images/songImages/laMarea.jpg"; 
-import seguidillas from "../assets/images/songImages/seguidillas.webp";
-import unGranRegalo from "../assets/images/songImages/unGranRegalo.webp";
-import vidalaSinVoz from "../assets/images/songImages/vidalaSinVoz.webp";
-// import angelitaRosales from "../assets/images/songImages/angelitaRosales.webp";
-// import arribaQuemandoElSol from "../assets/images/songImages/arribaQuemandoElSol.webp";
-// import cuandoMuere from "../assets/images/songImages/cuandoMuere.webp";
-// import lacrymosa from "../assets/images/songImages/lacrymosa.webp";
-// import laEstrellaAzul from "../assets/images/songImages/laEstrellaAzul.webp";
-// import loQueUstedMerece from "../assets/images/songImages/loQueUstedMerece.webp";
+import andando from "@/assets/images/songImages/andando.webp";
+import cancionDeCuna from "@/assets/images/songImages/cancionDeCuna.webp";
+import chacarera from "@/assets/images/songImages/chacarera.webp";
+import charrada from "@/assets/images/songImages/charrada.webp";
+import charros from "@/assets/images/songImages/charros.webp";
+import coplasAlAgua from "@/assets/images/songImages/coplasAlAgua.webp";
+import laMarea from "@/assets/images/songImages/laMarea.jpg"; 
+import seguidillas from "@/assets/images/songImages/seguidillas.webp";
+import unGranRegalo from "@/assets/images/songImages/unGranRegalo.webp";
+import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
+// import angelitaRosales from "@/assets/images/songImages/angelitaRosales.webp";
+// import arribaQuemandoElSol from "@/assets/images/songImages/arribaQuemandoElSol.webp";
+// import cuandoMuere from "@/assets/images/songImages/cuandoMuere.webp";
+// import lacrymosa from "@/assets/images/songImages/lacrymosa.webp";
+// import laEstrellaAzul from "@/assets/images/songImages/laEstrellaAzul.webp";
+// import loQueUstedMerece from "@/assets/images/songImages/loQueUstedMerece.webp";
 
 
 
@@ -107,9 +107,9 @@ const songs: ISong[] = [
   },
   {
     name: "Pájaros de barro",
-    composer: "Anónimo",
-    arranger: "Manuel Estrach",
-    species: "Seguidillas",
+    composer: "",
+    arranger: "",
+    species: "",
     imageSrc: seguidillas,
   },
   {
