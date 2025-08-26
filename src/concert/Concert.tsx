@@ -2,7 +2,7 @@ import WelcomeCard from "@/concert/WelcomeCard";
 import SongCard from "@/concert/SongCard";
 import CreditsCard from "@/concert/CreditsCard";
 
-import songs from "@/constants/xirguSongs";
+import songs from "@/constants/songs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

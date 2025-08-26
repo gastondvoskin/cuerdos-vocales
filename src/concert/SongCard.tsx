@@ -1,6 +1,6 @@
-import { IXirguSongProps } from "@/types";
+import { ISongProps } from "@/types";
 
-const SongCard: React.FC<IXirguSongProps> = ({ song }) => {
+const SongCard: React.FC<ISongProps> = ({ song }) => {
   return (
     <div
       className={`flex flex-col justify-between w-full h-full bg-myWhite-100 text-myGrey-900`}
