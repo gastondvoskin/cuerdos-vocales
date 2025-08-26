@@ -22,10 +22,10 @@ import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
 
 const songs: ISong[] = [
   {
-    name: "Lavanderas (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    name: "Canto de Lavanderas (fragmento)",
+    composer: "Aquiles Báez",
+    arranger: "Cuerdos Vocales",
+    species: "Cantos venezolanos",
     imageSrc: cancionDeCuna,
   },
   {
@@ -44,8 +44,8 @@ const songs: ISong[] = [
   },
   {
     name: "El caramba",
-    composer: "XXXX",
-    arranger: "XXXX",
+    composer: "Anónimo",
+    arranger: "Bernardo Guarrochena",
     species: "Caramba",
     imageSrc: cancionDeCuna,
   },
@@ -57,14 +57,14 @@ const songs: ISong[] = [
     imageSrc: vidalaSinVoz,
   },
   {
-    name: "Gohle (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    name: "Ghole Gumai Lalna (fragmento)",
+    composer: "Anónimo",
+    arranger: "Cuerdos vocales",
+    species: "Himno sij",
     imageSrc: cancionDeCuna,
   },
   {
-    name: "Zaspalo mome",
+    name: "Zaspalo mome kraj more",
     composer: "Anónimo",
     arranger: "Cuerdos Vocales",
     species: "Popular búlgara",
@@ -93,9 +93,9 @@ const songs: ISong[] = [
   },
   {
     name: "Los tres deseos de siempre",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    composer: "Carlos Aguirre",
+    arranger: "Fernando Carmona",
+    species: "huayno",
     imageSrc: cancionDeCuna,
   },
   {
@@ -106,10 +106,10 @@ const songs: ISong[] = [
     imageSrc: cancionDeCuna,
   },
   {
-    name: "Pájaros de barro (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    name: "Pájaros de barro",
+    composer: "Manolo García",
+    arranger: "Cuerdos Vocales",
+    species: "Rumba",
     imageSrc: cancionDeCuna,
   },
   {
@@ -122,22 +122,22 @@ const songs: ISong[] = [
   {
     name: "Charros españoles",
     composer: "Anónimo",
-    arranger: "J. Quintero - M. Tirso",
+    arranger: "J. Quintero - Manu Tirso",
     species: "Charros",
     imageSrc: charros,
   },
   {
     name: "Charrada de los perros",
     composer: "Anónimo",
-    arranger: "J. Quintero - M. Tirso",
+    arranger: "J. Quintero - Manu Tirso",
     species: "Charrada",
     imageSrc: charrada,
   },
   {
     name: "Conselho",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    composer: "Almir Guineto",
+    arranger: "Cuerdos Vocales",
+    species: "Samba",
     imageSrc: cancionDeCuna,
   },
   {
