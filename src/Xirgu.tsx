@@ -29,23 +29,22 @@ const Xirgu: React.FC = () => {
     title: "",  
     text: "", 
     members: [
-      {name: "Pau Bori", role: "Voz"},
-      {name: "Manu Estrach", role: "Voz"},
-      {name: "Lucre Flores", role: "Voz y bombo"},
-      {name: "Aldi Gómez", role: "Voz"},
-      {name: "Ber Guarrochena", role: "Voz y producción"},
-      {name: "Ale Randazzo", role: "Voz, guitarra y producción"},
-      {name: "Cata Terlerman", role: "Voz y caja"},
-      {name: "Ale Trosman", role: "Voz"},
-      {name: "Gastón Dvoskin", role: "Dirección y cajón"},
+      {name: "Aldi Gómez", role: "Voz, clarinete, wasá"},
+      {name: "Ale Randazzo", role: "Voz, guitarra, producción"},
+      {name: "Ale Trosman", role: "Voz, pandero"},
+      {name: "Ber Guarrochena", role: "Voz, producción"},
+      {name: "Cata Terlerman", role: "Voz, pandero"},
+      {name: "Gastón Dvoskin", role: "Percusión, dirección"},
+      {name: "Lucre Flores", role: "Voz, bombo"},
+      {name: "Manu Tirso", role: "Percusión, producción"},
+      {name: "Max Lukac", role: "Voz, zapateo"},
+      {name: "Pau Bori", role: "Voz, shakers"},
     ], 
     guests: [
-      {name: "Teresa Parodi", role: "Voz"},
-      {name: "Manu Tirso", role: "Percusión"},
+      {name: "Abril Lukac", role: "Danza"},
     ], 
     others: [
-      {name: "Teatro Margarita Xirgu", role: ""}, 
-      {name: "Maru Pereira", role: "Producción"}, 
+      {name: "Cultural Thames", role: "Centro cultural"}, 
       {name: "José Mercado", role: "Sonido"},
     ], 
     imageSrc: andando, 
@@ -72,14 +71,14 @@ const Xirgu: React.FC = () => {
           <XirguCard cardData={thanks} />
         </SwiperSlide>
       </Swiper>
-      <a 
+      {/* <a 
         href="https://www.cuerdosvocales.com" 
         className="text-blue-500 text-sm mt-2 underline hover:text-blue-700 transition-colors duration-300"
         target="_blank" 
         rel="noopener noreferrer"
       >
         cuerdosvocales.com
-      </a>
+      </a> */}
 
               {/* <div className="h-full flex justify-between items-center">
           <ImageComponent src={logo} alt="logo" className="h-16" />

@@ -21,7 +21,7 @@ const XirguCard: React.FC<IXirguCardProps> = ({cardData}) => {
           </div>
 
           <div>
-            <h4 className="text-lg">Invitades</h4>
+            <h4 className="text-lg">Invitada</h4>
             <ul>
               {cardData.guests?.map(member => <li>{`${member.name} - ${member.role}`}</li>)}
             </ul>
