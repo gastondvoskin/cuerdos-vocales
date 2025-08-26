@@ -11,7 +11,7 @@ const WelcomeCard: React.FC = () => {
           ¡Gracias por compartir este encuentro! ❤️
         </h3>
         <p className="text-sm">
-          "Arrastrá las tarjetitas para recorrer las canciones del concierto"
+          Arrastrá de derecha a izquierda
         </p>
       </div>
       <div className="flex flex-col items-center w-full h-full justify-center bg-[conic-gradient(at_left,_#eee,_#a8b)] ">
