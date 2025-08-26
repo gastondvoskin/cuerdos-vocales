@@ -11,7 +11,7 @@ import { EffectCards } from "swiper/modules";
 
 const Concert: React.FC = () => {
   return (
-    <main className="h-dvh w-dvw flex flex-col items-center justify-center text-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)]">
+    <main className="h-dvh w-dvw flex flex-col items-center justify-center text-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] overflow-hidden">
       <Swiper
         effect={"cards"}
         grabCursor={true}
