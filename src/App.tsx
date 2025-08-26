@@ -3,10 +3,10 @@ import NavLarge from "./navigation/NavLarge";
 import NavSmall from "./navigation/NavSmall";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Xirgu from "./Xirgu";
+import Concert from "./concert/Concert";
 import { useEffect } from "react";
 
 function App() {
-  // console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}`); // laptop 1280, 585; monitor 1920, 945
 
   const RedirectToHome = () => {
     const navigate = useNavigate();
@@ -20,6 +20,7 @@ function App() {
     <>
       <Routes>
         <Route path="/xirgu" element={<Xirgu />}/>
+        <Route path="/concierto" element={<Concert />}/>
         <Route path="/" element={
           <>
             <NavLarge />
