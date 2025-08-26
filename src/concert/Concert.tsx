@@ -11,12 +11,6 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
 const Concert: React.FC = () => {
-  const explanation = {
-    title: "¡Gracias por compartir este encuentro! ❤️",
-    text: "Arrastrá las tarjetitas para recorrer las canciones del concierto",
-    imageSrc: andando,
-    firstCard: true,
-  };
 
   const thanks = {
     title: "",
@@ -50,7 +44,7 @@ const Concert: React.FC = () => {
         className="w-56 h-[240]"
       >
         <SwiperSlide className="rounded-lg">
-          <WelcomeCard cardData={explanation} />
+          <WelcomeCard />
         </SwiperSlide>
 
         {songs.map((song, index) => (

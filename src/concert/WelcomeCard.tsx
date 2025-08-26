@@ -1,46 +1,25 @@
-import { IXirguCardProps } from "@/types";
 import ImageComponent from "@/components-reusable/ImageComponent";
 import xirguFlyer from "@/assets/images/enterprise/xirguFlyer.jpg";
 
-const WelcomeCard: React.FC<IXirguCardProps> = ({ cardData }) => {
+const WelcomeCard: React.FC = () => {
   return (
     <div
       className={`flex flex-col items-center w-full h-full bg-myWhite-100 text-myGrey-900`}
     >
       <div className="flex flex-col items-center w-full p-3 text-center">
         <h3 className="font-bold text-lg text-myOrange-500">
-          {cardData.title}
+          ¡Gracias por compartir este encuentro! ❤️
         </h3>
-        <p className="text-sm">{cardData.text}</p>
+        <p className="text-sm">
+          "Arrastrá las tarjetitas para recorrer las canciones del concierto"
+        </p>
       </div>
-
-      <div className="flex flex-col gap-2 text-center text-xs">
-        <div>
-          <h4 className="text-lg">Cuerdos Vocales</h4>
-          <ul>
-            {cardData.members?.map((member) => (
-              <li>{`${member.name} - ${member.role}`}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="text-lg">Invitada</h4>
-          <ul>
-            {cardData.guests?.map((member) => (
-              <li>{`${member.name} - ${member.role}`}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h4 className="text-lg">Técnica</h4>
-          <ul>
-            {cardData.others?.map((member) => (
-              <li>{`${member.name} - ${member.role}`}</li>
-            ))}
-          </ul>
-        </div>
+      <div className="flex flex-col items-center bg-[conic-gradient(at_left,_#0a0a04,_#ffbcab)] w-full h-full justify-center">
+        <ImageComponent
+          src={xirguFlyer}
+          alt="Cuerdos Vocales en círculo"
+          className="w-11/12 aspect-square rounded-full object-cover animate-spin drop-shadow-xl my-3"
+        />
       </div>
     </div>
   );
