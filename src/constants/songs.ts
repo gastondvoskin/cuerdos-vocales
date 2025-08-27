@@ -10,6 +10,14 @@ import laMarea from "@/assets/images/songImages/laMarea.jpg";
 import seguidillas from "@/assets/images/songImages/seguidillas.webp";
 import unGranRegalo from "@/assets/images/songImages/unGranRegalo.webp";
 import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
+import caramba from "@/assets/images/songImages/caramba.webp";
+import conselho from "@/assets/images/songImages/conselho.webp";
+import heSembrado from "@/assets/images/songImages/heSembrado.webp";
+import losTresDeseos from "@/assets/images/songImages/losTresDeseos.webp";
+import pajarosDeBarro from "@/assets/images/songImages/pajarosDeBarro.webp";
+import zaspalo from "@/assets/images/songImages/zaspalo.webp";
+import lavanderas from "@/assets/images/songImages/lavanderas.webp";
+
 // import angelitaRosales from "@/assets/images/songImages/angelitaRosales.webp";
 // import arribaQuemandoElSol from "@/assets/images/songImages/arribaQuemandoElSol.webp";
 // import cuandoMuere from "@/assets/images/songImages/cuandoMuere.webp";
@@ -26,7 +34,7 @@ const songs: ISong[] = [
     composer: "Aquiles Báez",
     arranger: "Cuerdos Vocales",
     species: "Cantos venezolanos",
-    imageSrc: cancionDeCuna,
+    imageSrc: lavanderas,
   },
   {
     name: "La marea",
@@ -47,7 +55,7 @@ const songs: ISong[] = [
     composer: "Anónimo",
     arranger: "Bernardo Guarrochena",
     species: "Caramba",
-    imageSrc: cancionDeCuna,
+    imageSrc: caramba,
   },
   {
     name: "Vidala sin voz",
@@ -68,7 +76,7 @@ const songs: ISong[] = [
     composer: "Anónimo",
     arranger: "Cuerdos Vocales",
     species: "Popular búlgara",
-    imageSrc: cancionDeCuna,
+    imageSrc: zaspalo,
   },
   {
     name: "Andando",
@@ -82,7 +90,7 @@ const songs: ISong[] = [
     composer: "Anónimo - Violeta Parra",
     arranger: "Catalina Telerman",
     species: "Vidala",
-    imageSrc: cancionDeCuna,
+    imageSrc: heSembrado,
   },
   {
     name: "Coplas al agua",
@@ -96,7 +104,7 @@ const songs: ISong[] = [
     composer: "Carlos Aguirre",
     arranger: "Fernando Carmona",
     species: "huayno",
-    imageSrc: cancionDeCuna,
+    imageSrc: losTresDeseos,
   },
   {
     name: "Canción de cuna intervenida",
@@ -106,11 +114,11 @@ const songs: ISong[] = [
     imageSrc: cancionDeCuna,
   },
   {
-    name: "Pájaros de barro",
+    name: "Pájaros de barro (fragmento)",
     composer: "Manolo García",
     arranger: "Cuerdos Vocales",
     species: "Rumba",
-    imageSrc: cancionDeCuna,
+    imageSrc: pajarosDeBarro,
   },
   {
     name: "Seguidillas del laurel",
@@ -138,7 +146,7 @@ const songs: ISong[] = [
     composer: "Almir Guineto",
     arranger: "Cuerdos Vocales",
     species: "Samba",
-    imageSrc: cancionDeCuna,
+    imageSrc: conselho,
   },
   {
     name: "Un gran regalo",
