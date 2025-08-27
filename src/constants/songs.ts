@@ -10,6 +10,14 @@ import laMarea from "@/assets/images/songImages/laMarea.jpg";
 import seguidillas from "@/assets/images/songImages/seguidillas.webp";
 import unGranRegalo from "@/assets/images/songImages/unGranRegalo.webp";
 import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
+import caramba from "@/assets/images/songImages/caramba.webp";
+import conselho from "@/assets/images/songImages/conselho.webp";
+import heSembrado from "@/assets/images/songImages/heSembrado.webp";
+import losTresDeseos from "@/assets/images/songImages/losTresDeseos.webp";
+import pajarosDeBarro from "@/assets/images/songImages/pajarosDeBarro.webp";
+import zaspalo from "@/assets/images/songImages/zaspalo.webp";
+import lavanderas from "@/assets/images/songImages/lavanderas.webp";
+
 // import angelitaRosales from "@/assets/images/songImages/angelitaRosales.webp";
 // import arribaQuemandoElSol from "@/assets/images/songImages/arribaQuemandoElSol.webp";
 // import cuandoMuere from "@/assets/images/songImages/cuandoMuere.webp";
@@ -22,11 +30,11 @@ import vidalaSinVoz from "@/assets/images/songImages/vidalaSinVoz.webp";
 
 const songs: ISong[] = [
   {
-    name: "Lavanderas (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
-    imageSrc: cancionDeCuna,
+    name: "Canto de Lavanderas (fragmento)",
+    composer: "Aquiles Báez",
+    arranger: "Cuerdos Vocales",
+    species: "Cantos venezolanos",
+    imageSrc: lavanderas,
   },
   {
     name: "La marea",
@@ -44,10 +52,10 @@ const songs: ISong[] = [
   },
   {
     name: "El caramba",
-    composer: "XXXX",
-    arranger: "XXXX",
+    composer: "Anónimo",
+    arranger: "Bernardo Guarrochena",
     species: "Caramba",
-    imageSrc: cancionDeCuna,
+    imageSrc: caramba,
   },
   {
     name: "Vidala sin voz",
@@ -57,18 +65,18 @@ const songs: ISong[] = [
     imageSrc: vidalaSinVoz,
   },
   {
-    name: "Gohle (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
+    name: "Ghole Gumai Lalna (fragmento)",
+    composer: "Anónimo",
+    arranger: "Cuerdos vocales",
+    species: "Himno sij",
     imageSrc: cancionDeCuna,
   },
   {
-    name: "Zaspalo mome",
+    name: "Zaspalo mome kraj more",
     composer: "Anónimo",
     arranger: "Cuerdos Vocales",
     species: "Popular búlgara",
-    imageSrc: cancionDeCuna,
+    imageSrc: zaspalo,
   },
   {
     name: "Andando",
@@ -82,7 +90,7 @@ const songs: ISong[] = [
     composer: "Anónimo - Violeta Parra",
     arranger: "Catalina Telerman",
     species: "Vidala",
-    imageSrc: cancionDeCuna,
+    imageSrc: heSembrado,
   },
   {
     name: "Coplas al agua",
@@ -93,10 +101,10 @@ const songs: ISong[] = [
   },
   {
     name: "Los tres deseos de siempre",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
-    imageSrc: cancionDeCuna,
+    composer: "Carlos Aguirre",
+    arranger: "Fernando Carmona",
+    species: "huayno",
+    imageSrc: losTresDeseos,
   },
   {
     name: "Canción de cuna intervenida",
@@ -107,10 +115,10 @@ const songs: ISong[] = [
   },
   {
     name: "Pájaros de barro (fragmento)",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
-    imageSrc: cancionDeCuna,
+    composer: "Manolo García",
+    arranger: "Cuerdos Vocales",
+    species: "Rumba",
+    imageSrc: pajarosDeBarro,
   },
   {
     name: "Seguidillas del laurel",
@@ -122,23 +130,23 @@ const songs: ISong[] = [
   {
     name: "Charros españoles",
     composer: "Anónimo",
-    arranger: "J. Quintero - M. Tirso",
+    arranger: "J. Quintero - Manu Tirso",
     species: "Charros",
     imageSrc: charros,
   },
   {
     name: "Charrada de los perros",
     composer: "Anónimo",
-    arranger: "J. Quintero - M. Tirso",
+    arranger: "J. Quintero - Manu Tirso",
     species: "Charrada",
     imageSrc: charrada,
   },
   {
     name: "Conselho",
-    composer: "XXXX",
-    arranger: "XXXX",
-    species: "XXXX",
-    imageSrc: cancionDeCuna,
+    composer: "Almir Guineto",
+    arranger: "Cuerdos Vocales",
+    species: "Samba",
+    imageSrc: conselho,
   },
   {
     name: "Un gran regalo",

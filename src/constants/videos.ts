@@ -1,6 +1,6 @@
 const videos = [
   {
-    label: "Cuerdos Vocales: concierto circular - diciembre de 2025",
+    label: "Cuerdos Vocales: concierto circular - 7 de diciembre de 2024",
     src: "https://www.youtube.com/embed/WQxGEHVRycs?si=bYsfCbq3jVhHnSdI",
   },
   {

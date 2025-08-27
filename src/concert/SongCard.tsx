@@ -6,7 +6,7 @@ const SongCard: React.FC<ISongProps> = ({ song }) => {
       className={`flex flex-col w-full h-full bg-myWhite-100 text-myGrey-900`}
     >
       <div className="flex flex-col items-center w-full p-3 text-center">
-        <h3 className="font-bold text-xl text-myOrange-500 h-14">
+        <h3 className="font-bold text-xl text-myOrange-500 h-14 text-balance">
           {song.name}
         </h3>
         <p className="text-md">{song.composer}</p>
