@@ -1,5 +1,9 @@
 const videos = [
   {
+    label: "Cuerdos Vocales: concierto circular - diciembre de 2025",
+    src: "https://www.youtube.com/embed/WQxGEHVRycs?si=bYsfCbq3jVhHnSdI",
+  },
+  {
     label: "Angelita Rosales ft. Teresa Parodi",
     src: "https://www.youtube.com/embed/M3-Mv6dEkP4?si=90NCv12U2SDQgaaC",
   },
