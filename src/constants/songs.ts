@@ -17,6 +17,7 @@ import losTresDeseos from "@/assets/images/songImages/losTresDeseos.webp";
 import pajarosDeBarro from "@/assets/images/songImages/pajarosDeBarro.webp";
 import zaspalo from "@/assets/images/songImages/zaspalo.webp";
 import lavanderas from "@/assets/images/songImages/lavanderas.webp";
+import gholImage from "@/assets/images/songImages/gholImage.jpeg";
 
 // import angelitaRosales from "@/assets/images/songImages/angelitaRosales.webp";
 // import arribaQuemandoElSol from "@/assets/images/songImages/arribaQuemandoElSol.webp";
@@ -65,11 +66,11 @@ const songs: ISong[] = [
     imageSrc: vidalaSinVoz,
   },
   {
-    name: "Ghole Gumai Lalna (fragmento)",
+    name: "Ghol ghumai lalna (fragmento)",
     composer: "Anónimo",
     arranger: "Cuerdos vocales",
     species: "Himno sij",
-    imageSrc: cancionDeCuna,
+    imageSrc: gholImage,
   },
   {
     name: "Zaspalo mome kraj more",
