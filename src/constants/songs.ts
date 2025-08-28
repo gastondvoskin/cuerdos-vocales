@@ -130,14 +130,14 @@ const songs: ISong[] = [
   {
     name: "Charros españoles",
     composer: "Anónimo",
-    arranger: "J. Quintero - Manu Tirso",
+    arranger: "J. Quintero - Manuel Rubio",
     species: "Charros",
     imageSrc: charros,
   },
   {
     name: "Charrada de los perros",
     composer: "Anónimo",
-    arranger: "J. Quintero - Manu Tirso",
+    arranger: "J. Quintero - Manuel Rubio",
     species: "Charrada",
     imageSrc: charrada,
   },

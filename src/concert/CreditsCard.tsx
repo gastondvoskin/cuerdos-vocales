@@ -1,14 +1,14 @@
 const CreditsCard: React.FC = () => {
   const members = [
-    { name: "Aldi Gómez", role: "Voz, clarinete, wasá" },
     { name: "Ale Randazzo", role: "Voz, guitarra, producción" },
     { name: "Ale Trosman", role: "Voz, pandero" },
     { name: "Ber Guarrochena", role: "Voz, producción" },
     { name: "Cata Terlerman", role: "Voz, pandero" },
     { name: "Gastón Dvoskin", role: "Percusión, dirección" },
     { name: "Lucre Flores", role: "Voz, bombo" },
-    { name: "Manu Tirso", role: "Percusión, producción" },
-    { name: "Max Lukac", role: "Voz, zapateo" },
+    { name: "Manuel Rubio", role: "Percusión, producción" },
+    { name: "María Aldana Gómez", role: "Voz, clarinete, wasá" },
+    { name: "Sacha Max", role: "Voz, zapateo" },
     { name: "Pau Bori", role: "Voz, shakers" },
   ];
 
