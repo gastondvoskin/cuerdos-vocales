@@ -7,7 +7,7 @@ const CreditsCard: React.FC = () => {
     { name: "Gastón Dvoskin", role: "Percusión, dirección" },
     { name: "Lucre Flores", role: "Voz, bombo" },
     { name: "Manuel Rubio", role: "Percusión, producción" },
-    { name: "María Aldana Gómez", role: "Voz, clarinete, wasá" },
+    { name: "María Aldana Gómez", role: "Voz, clarinete, guasá" },
     { name: "Sacha Max", role: "Voz, zapateo" },
     { name: "Pau Bori", role: "Voz, shakers" },
   ];
