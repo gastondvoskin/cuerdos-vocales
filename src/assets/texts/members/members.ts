@@ -8,19 +8,19 @@ import flores from "./flores";
 import gomez from "./gomez";
 import bori from "./bori";
 import telerman from "./telerman";
-import tirso from "./tirso";
+import rubio from "./rubio"
 
 const members: IMembers = {
-  dvoskin,
-  flores,
-  randazzo,
-  guarrochena,
-  telerman,
   bori,
-  trosman,
+  dvoskin,
+  randazzo,
   gomez,
+  guarrochena,
   lukac,
-  tirso,
+  flores,
+  trosman,
+  rubio,
+  telerman,
 }
 
 export default members; 

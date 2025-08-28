@@ -77,7 +77,7 @@ export interface IMembers {
   randazzo: IMember;
   guarrochena: IMember;
   lukac: IMember;
-  tirso: IMember;
+  rubio: IMember;
   trosman: IMember;
   flores: IMember;
   gomez: IMember;
