@@ -8,7 +8,7 @@ const WelcomeCard: React.FC = () => {
     >
       <div className="flex flex-col items-center w-full p-3 text-center">
         <h3 className="font-bold text-lg text-myOrange-500">
-          ¡Gracias por compartir este encuentro! ❤️
+          ¡Gracias por acompañarnos este año! ❤️
         </h3>
         <p className="text-sm">
           Arrastrá de derecha a izquierda

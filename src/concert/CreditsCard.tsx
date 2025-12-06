@@ -2,17 +2,22 @@ const CreditsCard: React.FC = () => {
   const members = [
     { name: "Ale Randazzo", role: "Voz, guitarra, producción" },
     { name: "Ale Trosman", role: "Voz, pandero" },
-    { name: "Ber Guarrochena", role: "Voz, producción" },
+    { name: "Ber Guarrochena", role: "Voz, visuales" },
     { name: "Cata Terlerman", role: "Voz, pandero" },
-    { name: "Gastón Dvoskin", role: "Percusión, dirección" },
+    { name: "Chanti Polonuer", role: "Voz, shakers" },
+    { name: "Gastón Dvoskin", role: "Dirección" },
     { name: "Lucre Flores", role: "Voz, bombo" },
     { name: "Manuel Rubio", role: "Percusión, producción" },
-    { name: "María Aldana Gómez", role: "Voz, clarinete, guasá" },
+    { name: "Aldi Gómez", role: "Voz, clarinete" },
     { name: "Sacha Max", role: "Voz, zapateo" },
     { name: "Pau Bori", role: "Voz, shakers" },
   ];
 
-  const guests = [{ name: "Abril Lukac", role: "Danza" }];
+  const guests = [
+    { name: "Cami Pino", role: "Voz" },
+    { name: "Rafael Borges", role: "Cavaquinho" },
+    { name: "Joaquín Fridman", role: "Bajo" },
+  ];
 
   const otherCredits = [
     { name: "Cultural Thames", role: "Centro cultural" },
@@ -33,11 +38,12 @@ const CreditsCard: React.FC = () => {
       </div>
 
       <div>
-        <h4 className="text-lg">Invitada</h4>
+        <h4 className="text-lg">Invitades</h4>
         <ul>
           {guests.map((guest) => (
             <li>{`${guest.name} - ${guest.role}`}</li>
           ))}
+          <li>Público - Sonidos diversos 💕</li>
         </ul>
       </div>
 
@@ -49,6 +55,10 @@ const CreditsCard: React.FC = () => {
           ))}
         </ul>
       </div>
+
+      <p className="text-sm font-semibold text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        ¡Feliz fin de año! ✨
+      </p>
     </div>
   );
 };
