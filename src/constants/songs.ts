@@ -19,12 +19,12 @@ import corazonPartio from "@/assets/images/songImages/corazonPartio.webp";
 import calendario from "@/assets/images/songImages/calendario.webp";
 import sayasAfrobolivianas from "@/assets/images/songImages/sayasAfrobolivianas.webp";
 import florEnLaNieve from "@/assets/images/songImages/florEnLaNieve.webp";
+import cancionDeCuna from "@/assets/images/songImages/cancionDeCuna.webp";
 // import coplasAlAgua from "@/assets/images/songImages/coplasAlAgua.webp";
 // import gholImage from "@/assets/images/songImages/gholImage.jpeg";
 // import caramba from "@/assets/images/songImages/caramba.webp";
 // import zaspalo from "@/assets/images/songImages/zaspalo.webp";
 // import andando from "@/assets/images/songImages/andando.webp";
-// import cancionDeCuna from "@/assets/images/songImages/cancionDeCuna.webp";
 // import cuandoMuere from "@/assets/images/songImages/cuandoMuere.webp";
 // import lacrymosa from "@/assets/images/songImages/lacrymosa.webp";
 // import laEstrellaAzul from "@/assets/images/songImages/laEstrellaAzul.webp";
@@ -70,13 +70,6 @@ const songs: ISong[] = [
     imageSrc: losTresDeseos,
   },
   {
-    name: "Flor en la nieve",
-    composer: "Nacho Vidal",
-    arranger: "Nacho Vidal",
-    species: "Canción",
-    imageSrc: florEnLaNieve,
-  },
-  {
     name: "Arriba quemando el Sol",
     composer: "Violeta Parra",
     arranger: "Gastón Dvoskin",
@@ -103,6 +96,20 @@ const songs: ISong[] = [
     arranger: "Catalina Telerman",
     species: "Vidala",
     imageSrc: heSembrado,
+  },
+  {
+    name: "Flor en la nieve",
+    composer: "Nacho Vidal",
+    arranger: "Nacho Vidal",
+    species: "Canción",
+    imageSrc: florEnLaNieve,
+  },
+  {
+    name: "Canción de cuna intervenida",
+    composer: "S. Shock - M. Buceta",
+    arranger: "Cuerdos Vocales",
+    species: "Canción - vidala",
+    imageSrc: cancionDeCuna,
   },
   {
     name: "Pájaros de barro (fragmento)",
@@ -168,13 +175,6 @@ const songs: ISong[] = [
     imageSrc: corazonPartio,
   },
 
-  // {
-  //   name: "Canción de cuna intervenida",
-  //   composer: "S. Shock - M. Buceta",
-  //   arranger: "Cuerdos Vocales",
-  //   species: "Canción - vidala",
-  //   imageSrc: cancionDeCuna,
-  // },
 
   // {
   //   name: "Coplas al agua",
@@ -183,6 +183,7 @@ const songs: ISong[] = [
   //   species: "Canción",
   //   imageSrc: coplasAlAgua,
   // },
+
   // {
   //   name: "El caramba",
   //   composer: "Anónimo",
