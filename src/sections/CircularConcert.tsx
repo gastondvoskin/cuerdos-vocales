@@ -25,16 +25,19 @@ const CircularConcert = () => {
       </div>
       <div className="flex flex-col text-center p-5 gap-2 justify-center">
         <p>
-          Fecha: <strong>Sábado 30 de agosto</strong>
+          Fecha: <strong>Sábado 8 de agosto</strong>
         </p>
         <p>
-          Hora: <strong>21:00hs puntual</strong>
+          Apertura de sala: <strong>20:00hs</strong>
+        </p>
+        <p>
+          Inicio: <strong>21:00hs puntual</strong>
         </p>
         <p>
           Lugar: <strong>Centro Cultural Thames</strong>
         </p>
         <a
-          href="https://culturalthames.com.ar/event/24065"
+          href="https://www.culturalthames.com.ar/event/125879-cuerdos-vocales-en-el-thames"
           target="_blank"
           rel="noopener noreferrer"
           className="flex justify-center"
