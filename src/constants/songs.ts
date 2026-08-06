@@ -35,17 +35,15 @@ import paraMiVuelta from "@/assets/images/songImages/paraMiVuelta.webp";
 import zandombes from "@/assets/images/songImages/zandombes.webp";
 
 /**
- * Catálogo completo de canciones, indexado por un id técnico estable.
+ * Full song catalog, indexed by a stable technical id.
  *
- * El id (la clave del objeto) es lo que se usa para referenciar la canción
- * desde `currentProgram.ts` y NUNCA debería cambiar. El campo `name` es solo
- * el título para mostrar en pantalla y se puede editar libremente sin romper
- * ningún programa armado.
+ * The id (the object key) is what `currentProgram.ts` uses to reference a
+ * song and should NEVER change. The `name` field is just the display title
+ * and can be edited freely without breaking any existing program.
  *
- * `SongId` (más abajo) se infiere de las claves de este objeto, así que si
- * en `currentProgram.ts` escribís un id que no existe (typo, id borrado,
- * etc.) TypeScript lo marca como error de compilación, no como un warning
- * silencioso en runtime.
+ * `SongId` (below) is inferred from this object's keys, so writing a
+ * nonexistent id in `currentProgram.ts` (typo, deleted id, etc.) is a
+ * compile-time TypeScript error, not a silent runtime warning.
  */
 const songCatalog = {
   cantoDeLavanderas: {
