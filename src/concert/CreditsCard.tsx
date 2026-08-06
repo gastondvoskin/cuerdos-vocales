@@ -4,24 +4,23 @@ const CreditsCard: React.FC = () => {
     { name: "Ale Trosman", role: "Voz, pandero" },
     { name: "Ber Guarrochena", role: "Voz, visuales" },
     { name: "Cata Terlerman", role: "Voz, pandero" },
-    { name: "Chanti Polonuer", role: "Voz, shakers" },
-    { name: "Gastón Dvoskin", role: "Dirección" },
+    { name: "Chanti Polonuer", role: "Voz" },
     { name: "Lucre Flores", role: "Voz, bombo" },
     { name: "Manuel Rubio", role: "Percusión, producción" },
-    { name: "Aldi Gómez", role: "Voz, clarinete" },
     { name: "Sacha Max", role: "Voz, zapateo" },
     { name: "Pau Bori", role: "Voz, shakers" },
+    { name: "Gastón Dvoskin", role: "Dirección" },
   ];
 
-  const guests = [
-    { name: "Cami Pino", role: "Voz" },
-    { name: "Rafael Borges", role: "Cavaquinho" },
-    { name: "Joaquín Fridman", role: "Bajo" },
-  ];
+  // const guests = [
+  //   { name: "Cami Pino", role: "Voz" },
+  // ];
 
   const otherCredits = [
     { name: "Cultural Thames", role: "Centro cultural" },
-    { name: "Juan Galimberti y José Mercado", role: "Sonido" },
+    { name: "Andrés Huevo", role: "Sonido" },
+    { name: "Juan Galimberti", role: "Coordinación Técnica" },
+    { name: "Leila Pablo", role: "Producción Thames" },
   ];
 
   return (
@@ -40,14 +39,14 @@ const CreditsCard: React.FC = () => {
       <div>
         <h4 className="text-lg">Invitades</h4>
         <ul>
-          {guests.map((guest) => (
+          {/* {guests.length > 0 && guests.map((guest) => (
             <li>{`${guest.name} - ${guest.role}`}</li>
-          ))}
-          <li>Público - Sonidos diversos 💕</li>
+          ))} */}
+          <li>Público - Improvisación 💕</li>
         </ul>
       </div>
-
-      <div className="mb-6">
+      
+      <div>
         <h4 className="text-lg">Técnica</h4>
         <ul>
           {otherCredits.map((credit) => (
@@ -57,7 +56,7 @@ const CreditsCard: React.FC = () => {
       </div>
 
       <p className="text-sm font-semibold text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-        ¡Feliz fin de año! ✨
+        ¡Hasta la próxima! ✨
       </p>
     </div>
   );

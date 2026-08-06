@@ -2,7 +2,8 @@ import WelcomeCard from "@/concert/WelcomeCard";
 import SongCard from "@/concert/SongCard";
 import CreditsCard from "@/concert/CreditsCard";
 
-import songs from "@/constants/songs";
+import { getProgramSongs } from "@/constants/songs";
+import { CURRENT_PROGRAM } from "@/constants/currentProgram";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,6 +11,8 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
 const Concert: React.FC = () => {
+  const programSongs = getProgramSongs(CURRENT_PROGRAM);
+
   return (
     <main className="h-dvh w-dvw flex flex-col items-center justify-center text-center bg-[conic-gradient(at_left,_#eeeeed,_#ffbcab)] overflow-hidden">
       <Swiper
@@ -22,7 +25,7 @@ const Concert: React.FC = () => {
           <WelcomeCard />
         </SwiperSlide>
 
-        {songs.map((song, index) => (
+        {programSongs.map((song, index) => (
           <SwiperSlide key={index} className="rounded-lg">
             <SongCard song={song} />
           </SwiperSlide>
