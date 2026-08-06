@@ -80,9 +80,9 @@ export interface IMembers {
   rubio: IMember;
   trosman: IMember;
   flores: IMember;
-  gomez: IMember;
   bori: IMember;
   telerman: IMember;
+  polonuer: IMember;
 }
 
 export interface IMemberCardProps {
