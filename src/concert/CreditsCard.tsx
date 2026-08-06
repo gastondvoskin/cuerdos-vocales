@@ -18,7 +18,9 @@ const CreditsCard: React.FC = () => {
 
   const otherCredits = [
     { name: "Cultural Thames", role: "Centro cultural" },
-    { name: "Juan Galimberti", role: "Sonido" },
+    { name: "Andrés Huevo", role: "Sonido" },
+    { name: "Juan Galimberti", role: "Coordinación Técnica" },
+    { name: "Leila Pablo", role: "Producción Thames" },
   ];
 
   return (
