@@ -25,7 +25,7 @@ const CircularConcert = () => {
       </div>
       <div className="flex flex-col text-center p-5 gap-2 justify-center">
         <p>
-          Fecha: <strong>Sábado 8 de agosto</strong>
+          Fecha: <strong>Sábado 5 de diciembre</strong>
         </p>
         <p>
           Apertura de sala: <strong>20:00hs</strong>
