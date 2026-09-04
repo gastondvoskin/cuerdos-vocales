@@ -38,7 +38,7 @@ const WeAre = () => {
         />
       )}
 
-      <div className="grid grid-cols-2 items-center gap-2 p-2 rounded-lg shadow-md my-10 bg-myWhite-100">
+      <div className="grid grid-cols-3 items-center gap-1 sm:gap-2 p-1 sm:p-2 rounded-lg shadow-md my-10 bg-myWhite-100 w-11/12 max-w-[35rem]">
         {
           Object.entries(members).map((member) => {
             const memberValue = member[1]; 
@@ -47,10 +47,10 @@ const WeAre = () => {
             return (
               <button 
                 key={memberName}
-                className="hover:scale-105 transition duration-300 ease-in-out transform p-"
+                className="hover:scale-105 transition duration-300 ease-in-out transform"
                 onClick={() => setCurrentMember(memberValue)}
               >
-                <img className="w-44 aspect-square object-cover" src={imageSrc} alt={memberName} />
+                <img className="w-full aspect-square object-cover" src={imageSrc} alt={memberName} />
               </button>
             )
           })

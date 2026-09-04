@@ -82,7 +82,6 @@ export interface IMembers {
   flores: IMember;
   bori: IMember;
   telerman: IMember;
-  polonuer: IMember;
 }
 
 export interface IMemberCardProps {

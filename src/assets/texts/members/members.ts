@@ -8,7 +8,6 @@ import flores from "./flores";
 import bori from "./bori";
 import telerman from "./telerman";
 import rubio from "./rubio"
-import polonuer from "./polonuer";
 
 const members: IMembers = {
   bori,
@@ -20,7 +19,6 @@ const members: IMembers = {
   trosman,
   rubio,
   telerman,
-  polonuer,
 }
 
 export default members; 

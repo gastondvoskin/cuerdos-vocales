@@ -4,7 +4,6 @@ const CreditsCard: React.FC = () => {
     { name: "Ale Trosman", role: "Voz, pandero" },
     { name: "Ber Guarrochena", role: "Voz, visuales" },
     { name: "Cata Terlerman", role: "Voz, pandero" },
-    { name: "Chanti Polonuer", role: "Voz" },
     { name: "Lucre Flores", role: "Voz, bombo" },
     { name: "Manuel Rubio", role: "Percusión, producción" },
     { name: "Sacha Max", role: "Voz, zapateo" },
